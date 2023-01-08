@@ -8,3 +8,8 @@
   font-family: $headers-font;
   border-radius: 4px;
 }
+
+.landing-main-button {
+  position: absolute;
+  z-index: 1000;
+}
