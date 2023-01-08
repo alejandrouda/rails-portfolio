@@ -1,0 +1,10 @@
+.main-button {
+  border: none;
+  background-color: $primary-color;
+  color: $white;
+  padding: 12px 40px;
+  box-shadow: 0px 3px 4px $box-shadow;
+  font-weight: 600;
+  font-family: $headers-font;
+  border-radius: 4px;
+}

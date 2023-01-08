@@ -1,1 +1,88 @@
 // Specific CSS for your home-page
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.main-site-container {
+  padding: 0 40px;
+}
+
+.landing-section {
+  padding-top: 80px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 5fr 5fr;
+  grid-template-rows: 1% 2% 20% 2%;
+}
+
+.social-media-icons-landing {
+  grid-column: 1;
+  grid-row: 3;
+  display: grid;
+  grid-template-rows: 50px 50px 50px;
+}
+
+.social-media-icon {
+  border: none;
+  background: none;
+  display: block;
+  text-align: left;
+}
+
+.landing-primary-section {
+  grid-column: 2;
+  max-width: 460px;
+  z-index: 2;
+  position: relative;
+}
+
+.landing-code-image {
+  z-index: 1;
+  left: -40px;
+  top: -10px;
+  width: 500px;
+  position: absolute;
+}
+
+.landing-secondary-header {
+  max-width: 350px;
+  padding: 20px 0;
+}
+
+.landing-secondary-section {
+  grid-column: 3;
+  grid-row: 2;
+  align-items: center;
+  img {
+    max-width: 550px;
+  }
+}
+
+// Fonts
+
+h1 {
+  font-size: 42px;
+  font-style: $headers-font;
+  font-weight: 800;
+  color: $primary-text;
+}
+
+h2 {
+  font-size: 34px;
+  font-family: $headers-font;
+  font-weight: 800;
+  color: $primary-text;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: $headers-font;
+  font-weight: 600;
+  color: $primary-text;
+}
+
+.text-align-center {
+  text-align: center;
+}
