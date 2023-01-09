@@ -2,21 +2,23 @@ ul li {
   list-style-type: none;
 }
 
-// .navbar-brand img {
-//   width: 160px;
-// }
+.navbar-brand img {
+  width: 150px;
+}
 
 .nav-font {
   font-family: "Poppins", "sans-serif";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   margin-block-start: 0 !important;
   margin-block-end: 0 !important;
   transition: 0.2s;
 }
+
 .nav-font a:hover {
   transition: 0.2s;
   color: $primary-color;
+  font-family: $headers-font
 }
 
 .nav-font:hover {
@@ -34,7 +36,7 @@ nav {
 
 .nav-content {
   height: 100%;
-  max-width: 1366px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -53,9 +55,9 @@ nav {
 
 .nav-links {
   width: 100%;
-  padding-right: 10%;
+  padding-left: 15%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: $primary-text;
   margin-block-end: 0;
   align-items: center;
@@ -68,6 +70,7 @@ nav {
 .burger-menu {
   cursor: pointer;
 }
+
 .burger-menu div {
   width: 23px;
   height: 2px;
@@ -83,14 +86,17 @@ nav {
     overflow-x: hidden !important;
     margin: 0px;
   }
+
   html {
     overflow-x: hidden !important;
   }
+
   #wrapper {
     position: absolute;
     width: 100%;
     overflow-x: hidden !important;
   }
+
   .nav-links {
     position: absolute;
     right: 0px;
@@ -107,15 +113,19 @@ nav {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
+
   .nav-links li {
     opacity: 0;
   }
+
   .nav-elements {
     width: fit-content;
   }
+
   .burger-menu {
     display: block;
   }
+
   .nav-font {
     font-size: 18px;
   }
@@ -136,6 +146,7 @@ nav {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0px);

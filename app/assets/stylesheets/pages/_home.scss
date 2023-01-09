@@ -6,7 +6,9 @@ body {
 }
 
 .main-site-container {
-  padding: 0 50px;
+  max-width: 1400px;
+  // width: 90vw;
+  margin: 0 auto
 }
 
 .landing-section {
@@ -34,7 +36,7 @@ body {
 
 .landing-primary-section {
   grid-column: 2;
-  max-width: 460px;
+  max-width: 500px;
   z-index: 2;
   position: relative;
 }
@@ -47,29 +49,30 @@ body {
   z-index: 1;
   left: -40px;
   top: -10px;
-  width: 500px;
+  width: 600px;
   position: absolute;
 }
 
 .landing-secondary-header {
-  max-width: 350px;
-  padding: 20px 0 30px 0;
+  max-width: 500px;
+  padding: 30px 0 40px 0;
 }
 
 .landing-secondary-section {
   grid-column: 3;
   grid-row: 2;
   align-items: center;
+
   img {
-    max-width: 550px;
+    width: 700px;
   }
 }
 
 // Fonts
 
 h1 {
-  font-size: 42px;
-  font-style: $headers-font;
+  font-size: 52px;
+  font-family: $headers-font;
   font-weight: 800;
   color: $primary-text;
 }
@@ -82,7 +85,7 @@ h2 {
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 26px;
   font-family: $headers-font;
   font-weight: 600;
   color: $primary-text;
