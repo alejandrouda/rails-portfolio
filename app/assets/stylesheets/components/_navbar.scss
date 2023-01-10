@@ -30,7 +30,7 @@ nav {
   height: 85px;
   font-size: 14px;
   font-weight: 500;
-  padding: 10px 40px 10px 40px;
+  padding: 10px 0;
   box-shadow: 0px 3px 4px $box-shadow;
 }
 
@@ -130,6 +130,25 @@ nav {
     font-size: 18px;
   }
 }
+
+@media only screen and (max-width:1480px) {
+  .nav-content {
+    max-width: 1350px;
+  }
+}
+
+@media only screen and (max-width:1400px) {
+  .nav-content {
+    max-width: 1250px;
+  }
+}
+
+@media only screen and (max-width:1300px) {
+  .nav-content {
+    max-width: 1150px;
+  }
+}
+
 
 @media (max-width: 524px) {
   nav {
