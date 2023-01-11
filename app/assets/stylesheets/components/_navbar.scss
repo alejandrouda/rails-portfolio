@@ -145,11 +145,11 @@ nav {
     padding: 10px 40px;
   }
 
-  #wrapper {
-    position: absolute;
-    width: 100%;
-    overflow-x: hidden !important;
-  }
+  // #wrapper {
+  //   position: absolute;
+  //   width: 100%;
+  //   overflow-x: hidden !important;
+  // }
 
   .nav-links {
     position: absolute;
@@ -163,13 +163,13 @@ nav {
     flex-direction: column;
     background-color: #0a192f;
     align-items: center;
-    width: 100vw !important;
+    width: 100vw;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
 
-  .nav-links li {
-    opacity: 0;
+  .nav-links {
+    display: none;
   }
 
   .nav-elements {
