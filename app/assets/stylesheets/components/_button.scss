@@ -2,7 +2,19 @@
   border: none;
   background-color: $primary-color;
   color: $white;
-  padding: 14px 46px;
+  padding: 16px 56px;
+  box-shadow: 0px 3px 4px $box-shadow;
+  font-weight: 600;
+  font-family: $headers-font;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.nav-main-button {
+  border: none;
+  background-color: $primary-color;
+  color: $white;
+  padding: 14px 44px;
   box-shadow: 0px 3px 4px $box-shadow;
   font-weight: 600;
   font-family: $headers-font;
