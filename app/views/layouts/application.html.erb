@@ -11,10 +11,12 @@
   </head>
 
   <body>
-  <%= render "shared/navbar" %>
-  <%= render "shared/flashes" %>
-  <div class="main-site-container">
-    <%= yield %>
-  </div>
+    <div class="overflow-wrap">
+      <%= render "shared/navbar" %>
+      <%= render "shared/flashes" %>
+      <div class="main-site-container">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
