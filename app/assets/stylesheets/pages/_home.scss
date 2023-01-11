@@ -35,10 +35,12 @@ body {
 }
 
 .landing-primary-section {
-  grid-column: 2;
   max-width: 500px;
-  flex-grow: initial;
-  z-index: 2;
+  background-image: url("https://res.cloudinary.com/dfyhqslry/image/upload/v1673181527/code%20web/-_tynmfj.svg");
+  background-size: 520px;
+  width: 500px;
+  background-position-x: -25px;
+  background-repeat: no-repeat;
 }
 
 .button-link {
@@ -63,7 +65,7 @@ body {
 
   img {
     width: 42vw;
-    min-width: 450px;
+    min-width: 420px;
     max-width: 650px;
   }
 }
@@ -98,11 +100,11 @@ h4 {
 @media only screen and (max-width:1480px) {
   .main-site-container {
     max-width: 1300px;
-    margin: 0 auto
   }
 
   .landing-primary-section {
     max-width: 450px;
+    background-size: 480px;
   }
 
   h1 {
@@ -130,11 +132,11 @@ h4 {
 @media only screen and (max-width:1400px) {
   .main-site-container {
     max-width: 1250px;
-    margin: 0 auto
   }
 
   .landing-primary-section {
     max-width: 425px;
+    background-size: 450px;
   }
 
   h1 {
@@ -162,11 +164,12 @@ h4 {
 @media only screen and (max-width:1300px) {
   .main-site-container {
     max-width: 1150px;
-    margin: 0 auto
   }
 
   .landing-primary-section {
     max-width: 400px;
+    background-size: 425px;
+    background-position-x: -20px;
   }
 
   h1 {
@@ -188,5 +191,109 @@ h4 {
     font-family: $headers-font;
     font-weight: 600;
     color: $primary-text;
+  }
+}
+
+@media only screen and (max-width:1250px) {
+  .main-site-container {
+    max-width: 1100px;
+  }
+}
+
+@media only screen and (max-width:1150px) {
+  .main-site-container {
+    max-width: 1000px;
+  }
+
+  .landing-primary-section {
+    max-width: 380px;
+    background-size: 405px;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-family: $headers-font;
+    font-weight: 800;
+    color: $primary-text;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-family: $headers-font;
+    font-weight: 800;
+    color: $primary-text;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-family: $headers-font;
+    font-weight: 600;
+    color: $primary-text;
+  }
+}
+
+@media only screen and (max-width:1050px) {
+  .main-site-container {
+    max-width: 940px;
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  .main-site-container {
+    max-width: 920px;
+  }
+
+  .landing-primary-section {
+    max-width: 360px;
+    background-size: 380px;
+  }
+
+  h1 {
+    font-size: 38px;
+    font-family: $headers-font;
+    font-weight: 800;
+    color: $primary-text;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-family: $headers-font;
+    font-weight: 800;
+    color: $primary-text;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-family: $headers-font;
+    font-weight: 600;
+    color: $primary-text;
+  }
+
+}
+
+@media only screen and (max-width:960px) {
+  .main-site-container {
+    max-width: none;
+    padding: 0 40px;
+  }
+
+  .social-media-icons-landing {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:872px) {
+  .landing-section {
+    flex-direction: column;
+  }
+
+  .landing-primary-section {
+    margin: 0 auto
+  }
+}
+
+@media only screen and (max-width:524px) {
+  .main-site-container {
+    padding: 0 20px;
   }
 }
