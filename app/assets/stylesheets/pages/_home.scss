@@ -1,4 +1,4 @@
-// Specific CSS for your home-page
+// General site config
 html,
 body,
 .overflow-wrap {
@@ -12,11 +12,14 @@ body,
   margin: 0 auto
 }
 
+// Landing section
+
 .landing-section {
   padding-top: 80px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  // height: calc(80vh - 85px)
 }
 
 .social-media-icons-landing {
@@ -252,12 +255,12 @@ h4 {
   }
 
   .landing-primary-section {
-    max-width: 360px;
+    max-width: 350px;
     background-size: 380px;
   }
 
   .landing-secondary-section {
-    width: 360px;
+    width: 400px;
 
     img {
       min-width: 100%;
@@ -317,6 +320,7 @@ h4 {
 
   .landing-section {
     padding-top: 40px;
+    height: calc(100vh - 85px)
   }
 }
 
@@ -376,4 +380,52 @@ h4 {
     font-weight: 800;
     color: $primary-text;
   }
+}
+
+@media only screen and (max-width:360px) {
+
+  .landing-primary-section {
+    max-width: 300px;
+    background-size: 320px;
+  }
+
+  .landing-secondary-section {
+    width: 300px
+  }
+
+  h1 {
+    font-size: 32px;
+    font-family: $headers-font;
+    font-weight: 800;
+    color: $primary-text;
+  }
+}
+
+@media only screen and (max-width:340px) {
+
+  .landing-primary-section {
+    max-width: 280px;
+    background-size: 300px;
+  }
+
+  .landing-secondary-section {
+    width: 280px
+  }
+
+  h1 {
+    font-size: 30px;
+    font-family: $headers-font;
+    font-weight: 800;
+    color: $primary-text;
+  }
+}
+
+// Services section
+
+.services-section {
+  margin-top: 100px;
+  padding-top: 100px;
+  height: 100vh;
+  background-color: #EFEFF8;
+  background-size: 100%;
 }
