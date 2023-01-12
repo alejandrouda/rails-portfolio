@@ -64,11 +64,11 @@ body,
 
 .landing-secondary-section {
   padding-top: 50px;
+  max-width: 500px;
 
   img {
-    width: 42vw;
-    min-width: 300px;
-    max-width: 650px;
+    min-width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -202,9 +202,9 @@ h4 {
   }
 }
 
-@media only screen and (max-width:1150px) {
+@media only screen and (max-width:1140px) {
   .main-site-container {
-    max-width: 1000px;
+    max-width: 1020px;
   }
 
   .landing-primary-section {
@@ -234,13 +234,19 @@ h4 {
   }
 }
 
-@media only screen and (max-width:1050px) {
+@media only screen and (max-width:1060px) {
   .main-site-container {
-    max-width: 940px;
+    max-width: 1000px;
   }
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1030px) {
+  .main-site-container {
+    max-width: 980px;
+  }
+}
+
+@media only screen and (max-width:1010px) {
   .main-site-container {
     max-width: 920px;
   }
@@ -248,6 +254,15 @@ h4 {
   .landing-primary-section {
     max-width: 360px;
     background-size: 380px;
+  }
+
+  .landing-secondary-section {
+    width: 360px;
+
+    img {
+      min-width: 100%;
+      max-width: 100%;
+    }
   }
 
   h1 {
@@ -298,6 +313,13 @@ h4 {
   }
 }
 
+@media only screen and (max-width:600px) {
+
+  .landing-section {
+    padding-top: 40px;
+  }
+}
+
 @media only screen and (max-width:524px) {
   .main-site-container {
     padding: 0 20px;
@@ -309,6 +331,10 @@ h4 {
   .landing-primary-section {
     max-width: 340px;
     background-size: 360px;
+  }
+
+  .landing-secondary-section {
+    width: 340px
   }
 
   h1 {
