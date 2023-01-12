@@ -170,10 +170,10 @@ nav {
   .nav-links {
     position: absolute;
     right: 0px;
-    min-height: calc(100% - 82px);
-    max-height: calc(100% - 82px);
+    min-height: calc(100vh - 85px);
+    max-height: calc(100vh - 85px);
     overflow-y: hidden;
-    top: 84px;
+    top: 85px;
     align-items: top;
     margin-block-start: 0;
     padding: 80px 0;
