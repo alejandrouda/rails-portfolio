@@ -164,7 +164,8 @@ nav {
   .nav-links {
     position: absolute;
     right: 0px;
-    height: calc(100vh - 84px);
+    min-height: calc(100% - 84px);
+    max-height: calc(100% - 84px);
     overflow-y: hidden;
     top: 84px;
     align-items: top;
