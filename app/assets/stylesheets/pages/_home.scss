@@ -314,14 +314,24 @@ h4 {
   .landing-secondary-section {
     margin: 0 auto
   }
+
+  .services-section {
+    margin-top: 50px;
+  }
 }
 
 @media only screen and (max-width:600px) {
 
   .landing-section {
-    padding-top: 40px;
-    height: calc(100vh - 85px)
+    padding-top: 50px;
+    // height: calc(100vh - 85px)
   }
+
+  .landing-secondary-section {
+    display: none;
+  }
+
+
 }
 
 @media only screen and (max-width:524px) {
