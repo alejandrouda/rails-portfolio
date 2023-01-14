@@ -102,6 +102,18 @@ h4 {
   text-align: center;
 }
 
+
+// Services section
+
+.services-section {
+  margin-top: 100px;
+  padding-top: 100px;
+  height: 100vh;
+  background-color: #EFEFF8;
+  background-size: 100%;
+}
+
+
 @media only screen and (max-width:1480px) {
   .main-site-container {
     max-width: 1300px;
@@ -268,25 +280,13 @@ h4 {
     }
   }
 
-  h1 {
-    font-size: 38px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
-  }
 
   h2 {
     font-size: 26px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
   }
 
   h4 {
     font-size: 20px;
-    font-family: $headers-font;
-    font-weight: 600;
-    color: $primary-text;
   }
 
 }
@@ -316,14 +316,15 @@ h4 {
   }
 
   .services-section {
-    margin-top: 50px;
+    margin-top: 60px;
+    padding-top: 60px;
   }
 }
 
 @media only screen and (max-width:600px) {
 
   .landing-section {
-    padding-top: 50px;
+    padding-top: 40px;
     // height: calc(100vh - 85px)
   }
 
@@ -352,24 +353,15 @@ h4 {
   }
 
   h1 {
-    font-size: 36px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
+    font-size: 40px;
   }
 
   h2 {
     font-size: 24px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
   }
 
   h4 {
     font-size: 18px;
-    font-family: $headers-font;
-    font-weight: 600;
-    color: $primary-text;
   }
 }
 
@@ -385,10 +377,7 @@ h4 {
   }
 
   h1 {
-    font-size: 34px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
+    font-size: 40px;
   }
 }
 
@@ -404,10 +393,7 @@ h4 {
   }
 
   h1 {
-    font-size: 32px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
+    font-size: 36px;
   }
 }
 
@@ -423,19 +409,6 @@ h4 {
   }
 
   h1 {
-    font-size: 30px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
+    font-size: 32px;
   }
-}
-
-// Services section
-
-.services-section {
-  margin-top: 100px;
-  padding-top: 100px;
-  height: 100vh;
-  background-color: #EFEFF8;
-  background-size: 100%;
 }
