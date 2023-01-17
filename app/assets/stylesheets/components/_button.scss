@@ -8,6 +8,12 @@
   font-family: $headers-font;
   border-radius: 4px;
   font-size: 16px;
+  transition: 0.2s;
+}
+
+.main-button:hover {
+  background-color: $primary-color-hover;
+  transition: 0.2s;
 }
 
 .nav-main-button {
@@ -20,10 +26,16 @@
   font-family: $headers-font;
   border-radius: 4px;
   font-size: 16px;
+  transition: 0.2s;
 }
 
-@media only screen and (max-width:1010px) {
+.nav-main-button:hover {
+  background-color: $primary-color-hover;
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 1010px) {
   .main-button {
-    width: 100%
+    width: 100%;
   }
 }
