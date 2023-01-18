@@ -100,6 +100,13 @@ h2 {
   color: $primary-text;
 }
 
+h3 {
+  font-size: 30px;
+  font-family: $headers-font;
+  font-weight: 600;
+  color: $primary-text;
+}
+
 h4 {
   font-size: 26px;
   font-family: $headers-font;
@@ -107,6 +114,19 @@ h4 {
   color: $primary-text;
 }
 
+h5 {
+  font-size: 16px;
+  font-family: $headers-font;
+  font-weight: 800;
+  color: $primary-text;
+}
+
+h6 {
+  font-size: 20px;
+  font-family: $headers-font;
+  font-weight: 500;
+  color: darkgray;
+}
 .text-align-center {
   text-align: center;
 }
@@ -119,6 +139,60 @@ h4 {
   height: 100vh;
   background-color: #efeff8;
   background-size: 100%;
+}
+
+.services-list {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 520px;
+  margin: 80px auto 40px auto;
+}
+
+.services-list {
+  li {
+    cursor: pointer;
+  }
+}
+
+.services-render {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 80px auto;
+}
+
+.services-description {
+  width: 42%;
+  a {
+    text-decoration: none;
+  }
+}
+
+.services-description-header {
+  padding: 20px 0px;
+}
+
+.services-image {
+  width: 42%;
+  img {
+    width: 100%;
+  }
+}
+
+.services-list_selected {
+  color: $primary-color;
+  text-decoration: underline $primary-color;
+  text-underline-offset: 12px;
+}
+
+.services-description_indicator {
+  color: $primary-color;
+}
+
+.services-description_link {
+  color: $primary-color;
+  padding-top: 20px;
 }
 
 @media only screen and (max-width: 1480px) {
