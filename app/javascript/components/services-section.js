@@ -5,9 +5,13 @@ const servicesElementSwitch = () => {
   // This function should toggle between beforebegin and beforeend taking 768px as breakpoint
 
   if (window.innerWidth <= 768) {
-    console.log("Matched!");
     servicesRender.insertAdjacentElement("beforebegin", servicesImage);
+  }
+  if (window.innerWidth > 768) {
+    servicesRender.insertAdjacentElement("beforeend", servicesImage);
   }
 };
 
 servicesElementSwitch();
+
+window.onresize = servicesElementSwitch;
