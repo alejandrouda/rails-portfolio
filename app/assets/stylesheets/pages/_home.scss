@@ -451,8 +451,10 @@ h6 {
     select {
       display: block;
       margin: 40px auto;
-      padding: 10px 40px;
+      padding: 10px;
+      width: 80%;
       border-color: lightgray;
+      background-color: white;
     }
   }
   .services-render {
@@ -477,6 +479,20 @@ h6 {
 
   .landing-secondary-section {
     display: none;
+  }
+
+  .services-section {
+    select {
+      width: 100%;
+    }
+  }
+
+  .services-image {
+    width: 100%;
+  }
+
+  .services-description {
+    width: 100%;
   }
 }
 
