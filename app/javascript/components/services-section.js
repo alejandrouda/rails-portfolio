@@ -14,5 +14,5 @@ const servicesElementSwitch = () => {
 
 servicesElementSwitch();
 
-// optimize performance
+// optimize performance, e.g setTimeOut 250ms
 window.onresize = servicesElementSwitch;
