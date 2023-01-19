@@ -14,4 +14,5 @@ const servicesElementSwitch = () => {
 
 servicesElementSwitch();
 
+// optimize performance
 window.onresize = servicesElementSwitch;
