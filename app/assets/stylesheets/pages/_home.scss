@@ -3,6 +3,7 @@ html,
 body,
 .overflow-wrap {
   max-width: 100%;
+  background: $white;
   // overflow-x: hidden;
   // position: absolute;
 }
@@ -183,7 +184,7 @@ h6 {
   }
 }
 
-.services-list_selected {
+.services-list--selected {
   color: $primary-color;
   text-decoration: underline $primary-color;
   text-underline-offset: 12px;
@@ -196,6 +197,61 @@ h6 {
 .services-description_link {
   color: $primary-color;
   padding-top: 20px;
+}
+
+// Packages section
+
+.packages-section {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.packages {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.package {
+  width: 315px;
+  border: solid 1px darkgray;
+}
+
+.package--selected {
+  width: 320px;
+  border: solid 1px $primary-color;
+  .package-headers {
+    background-color: $primary-color-background;
+    border-bottom: solid 1px $primary-color;
+  }
+  .package-description {
+    background-color: $primary-color-light-background;
+  }
+}
+
+.package-headers {
+  margin: 0 auto;
+  height: 150px;
+  background-color: $light-gray;
+  border-bottom: solid 1px gray;
+  padding: 30px;
+  text-align: center;
+  h5 {
+    margin-bottom: 0;
+  }
+}
+
+.package-description {
+  padding: 30px 20px;
+  height: 250px;
+  ul {
+    padding-bottom: 10px;
+    padding-left: 0;
+    margin-block-start: 0;
+  }
+  li {
+    padding-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 1480px) {

@@ -34,6 +34,18 @@
   transition: 0.2s;
 }
 
+.know-more-button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 12px;
+  border: solid 1px lightgray;
+  border-radius: 4px;
+  font-family: $headers-font;
+  background-color: $white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 1010px) {
   .main-button {
     width: 100%;
