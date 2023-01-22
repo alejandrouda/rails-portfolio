@@ -2,7 +2,6 @@
 
 // For example:
 $red: #fd1015;
-$white: rgb(232, 232, 232);
 $blue: #0d6efd;
 $yellow: #ffc65a;
 $orange: #e67e22;
@@ -14,5 +13,8 @@ $light-gray: #f4f4f4;
 // $primary-color: #0603ff;
 $primary-color: rgb(57, 55, 200);
 $primary-color-hover: rgb(26, 24, 146);
+$primary-color-background: rgba(57, 55, 200, 0.12);
+$primary-color-light-background: rgba(57, 55, 200, 0.02);
 $primary-text: rgb(60, 60, 60);
 $box-shadow: rgba(0, 0, 0, 0.2);
+$white: rgb(250, 250, 250);
