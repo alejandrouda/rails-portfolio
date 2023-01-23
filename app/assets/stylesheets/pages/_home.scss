@@ -413,6 +413,26 @@ h6 {
     margin-bottom: 0;
     padding: 5px 0;
   }
+
+  .packages-section {
+    width: 710px;
+  }
+
+  .packages {
+    flex-wrap: wrap;
+  }
+
+  .package {
+    width: 340px;
+    margin-bottom: 30px;
+  }
+
+  .package-headers {
+    height: 120px;
+  }
+  .package-description {
+    height: 260px;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -542,6 +562,14 @@ h6 {
   .services-description {
     width: 43%;
   }
+
+  .packages-section {
+    width: 100%;
+  }
+
+  .package {
+    width: 48%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -573,6 +601,33 @@ h6 {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .package {
+    margin-bottom: 20px;
+  }
+
+  .package-headers {
+    height: 140px;
+  }
+
+  .package-description {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .package {
+    width: 60%;
+  }
+  .packages {
+    justify-content: space-around;
+  }
+
+  .package-description {
+    height: 260px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .landing-section {
     padding-top: 125px;
@@ -595,11 +650,17 @@ h6 {
   .services-description {
     width: 100%;
   }
+  .package {
+    width: 65%;
+  }
 }
 
 @media only screen and (max-width: 524px) {
   .main-site-container {
     padding: 0 20px;
+  }
+  .package {
+    width: 80%;
   }
 }
 
@@ -623,6 +684,9 @@ h6 {
 
   h4 {
     font-size: 18px;
+  }
+  .package {
+    width: 100%;
   }
 }
 
