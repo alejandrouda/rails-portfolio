@@ -101,7 +101,7 @@ nav {
 
 @media only screen and (max-width: 1300px) {
   .nav-content {
-    max-width: 1150px;
+    max-width: 1220px;
   }
 
   .nav-elements {
@@ -109,13 +109,19 @@ nav {
   }
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1270px) {
   .nav-content {
-    max-width: 1100px;
+    max-width: 1160px;
   }
 
   .nav-elements {
     width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav-content {
+    max-width: 1100px;
   }
 }
 

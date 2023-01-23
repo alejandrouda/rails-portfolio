@@ -136,8 +136,7 @@ h6 {
 
 .services-section {
   margin-top: 100px;
-  padding-top: 100px;
-  height: 100vh;
+  padding: 100px 0;
   background-color: #efeff8;
   background-size: 100%;
 }
@@ -163,7 +162,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
-  margin: 80px auto;
+  margin: 80px auto 0 auto;
 }
 
 .services-description {
@@ -202,8 +201,8 @@ h6 {
 // Packages section
 
 .packages-section {
-  max-width: 1000px;
-  margin: 40px auto;
+  margin: 80px auto;
+  max-width: 1275px;
 }
 
 .packages {
@@ -213,13 +212,16 @@ h6 {
 }
 
 .package {
-  width: 315px;
+  width: 300px;
   border: solid 1px darkgray;
+  h4 {
+    font-size: 24px;
+  }
 }
 
 .package--selected {
-  width: 320px;
   border: solid 1px $primary-color;
+  box-shadow: 0px 3px 10px $box-shadow;
   .package-headers {
     background-color: $primary-color-background;
     border-bottom: solid 1px $primary-color;
@@ -231,7 +233,7 @@ h6 {
 
 .package-headers {
   margin: 0 auto;
-  height: 150px;
+  height: 140px;
   background-color: $light-gray;
   border-bottom: solid 1px gray;
   padding: 30px;
@@ -243,14 +245,19 @@ h6 {
 
 .package-description {
   padding: 30px 20px;
-  height: 250px;
-  ul {
-    padding-bottom: 10px;
-    padding-left: 0;
-    margin-block-start: 0;
-  }
-  li {
-    padding-bottom: 10px;
+  height: 280px;
+}
+
+.included-items {
+  padding: 10px 0;
+  margin-block-start: 0;
+}
+
+.included-item {
+  display: flex;
+  i {
+    padding-top: 5px;
+    padding-right: 10px;
   }
 }
 
@@ -321,11 +328,15 @@ h6 {
     font-weight: 600;
     color: $primary-text;
   }
+
+  .packages-section {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
   .main-site-container {
-    max-width: 1150px;
+    max-width: 1220px;
   }
 
   .landing-primary-section {
@@ -358,15 +369,49 @@ h6 {
     font-weight: 600;
     color: $primary-text;
   }
+
+  .package {
+    width: 290px;
+  }
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1270px) {
   .main-site-container {
-    max-width: 1100px;
+    max-width: 1160px;
   }
   .landing-secondary-section {
     padding-top: 50px;
     max-width: 500px;
+  }
+
+  .package {
+    width: 275px;
+  }
+
+  .package-description {
+    height: 300px;
+  }
+  .included-items {
+    margin-bottom: 0;
+    padding: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-site-container {
+    max-width: 1100px;
+  }
+
+  .package {
+    width: 275px;
+  }
+
+  .package-description {
+    height: 300px;
+  }
+  .included-items {
+    margin-bottom: 0;
+    padding: 5px 0;
   }
 }
 
