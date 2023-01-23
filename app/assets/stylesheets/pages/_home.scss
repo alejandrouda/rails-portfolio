@@ -662,6 +662,9 @@ h6 {
   .package {
     width: 75%;
   }
+  .package-headers {
+    height: 120px;
+  }
 }
 
 @media only screen and (max-width: 524px) {
@@ -693,6 +696,9 @@ h6 {
 
   h4 {
     font-size: 18px;
+  }
+  .packages-section {
+    margin-top: 40px;
   }
   .package {
     width: 100%;
