@@ -655,6 +655,15 @@ h6 {
   }
 }
 
+@media only screen and (max-width: 560px) {
+  .main-site-container {
+    padding: 0 20px;
+  }
+  .package {
+    width: 75%;
+  }
+}
+
 @media only screen and (max-width: 524px) {
   .main-site-container {
     padding: 0 20px;
