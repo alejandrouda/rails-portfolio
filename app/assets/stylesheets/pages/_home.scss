@@ -211,15 +211,28 @@ h6 {
   justify-content: space-between;
 }
 
+// .package {
+//   width: 300px;
+//   border: solid 1px darkgray;
+//   h4 {
+//     font-size: 24px;
+//   }
+// }
+
+// .package--selected {
+//   border: solid 1px $primary-color;
+//   box-shadow: 0px 3px 10px $box-shadow;
+//   .package-headers {
+//     background-color: $primary-color-background;
+//     border-bottom: solid 1px $primary-color;
+//   }
+//   .package-description {
+//     background-color: $primary-color-light-background;
+//   }
+// }
+
 .package {
   width: 300px;
-  border: solid 1px darkgray;
-  h4 {
-    font-size: 24px;
-  }
-}
-
-.package--selected {
   border: solid 1px $primary-color;
   box-shadow: 0px 3px 10px $box-shadow;
   .package-headers {
@@ -229,6 +242,15 @@ h6 {
   .package-description {
     background-color: $primary-color-light-background;
   }
+  h4 {
+    font-size: 24px;
+  }
+  transition: 0.2s;
+}
+
+.package:hover {
+  box-shadow: 0px 12px 24px $box-shadow;
+  transition: 0.2s;
 }
 
 .package-headers {
