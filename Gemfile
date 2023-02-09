@@ -27,6 +27,8 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem 'sendgrid-ruby'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -47,7 +49,7 @@ gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
-
+gem "recaptcha"
 gem "devise"
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
