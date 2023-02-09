@@ -1,0 +1,38 @@
+<div class="main-site-container">
+    <div class="contact-section">
+        <h3>Contacto</h3>
+        <%= simple_form_for(@contact_form) do |f| %>
+            <%= f.input :name,
+                required: true,
+                autofocus: true,
+                autocomplete: false,
+                label: "Nombre",
+                input_html: { autocomplete: "Nombre"} %>
+            <%= f.input :email,
+                required: true,
+                autofocus: true,
+                autocomplete: false,
+                label: "Email",
+                as: :email,
+                error: "Please put a valid email",
+                input_html: { autocomplete: "Email"} %>
+            <%= f.input :phone,
+                required: true,
+                autofocus: true,
+                autocomplete: false,
+                label: "Telefono",
+                as: :tel,
+                input_html: { autocomplete: "Teléfono"} %>
+            <%= f.input :content,
+                required: true,
+                autofocus: true,
+                autocomplete: false,
+                label: "Mensaje",
+                input_html: { autocomplete: "Mensaje"} %>
+                <%= recaptcha_tags %>
+                <button class="main-button form-button button-link">
+                    <%= f.button :submit, "Enviar" %>
+                </button>
+        <% end %>
+    </div>
+</div>
