@@ -31,16 +31,18 @@ class ContactFormsController < ApplicationController
     
     def create
         @contact_form = ContactForm.new(contact_form_params)
-        if verify_recaptcha(model:@contact_form) 
+        if verify_recaptcha(model: @contact_form)
+            p '---------------verification successful---------------'
+            
             if @contact_form.save
                 contact_email(contact_form_params)
                 redirect_to contacto_path, notice: "Mensaje enviado"
-    
             else
-                redirect_to contacto_path, notice: "Por favor completa el formulario"
+                redirect_to contacto_path, notice: "Por favor completa todos los campos del formulario."
             end
+
         else
-            redirect_to contacto_path, notice: @contact_form.errors[:base][0]
+            redirect_to contacto_path, notice: "Fallo al autorizar reCAPTCHA. Por favor intente nuevamente."
         end
     end
 

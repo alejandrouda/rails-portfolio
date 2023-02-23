@@ -1,5 +1,5 @@
 <div class="main-site-container">
-    <div class="contact-section">
+    <div class="contact-section" data-turbo="false" >
         <h3>Contacto</h3>
         <%= simple_form_for(@contact_form) do |f| %>
             <%= f.input :name,
@@ -30,9 +30,11 @@
                 label: "Mensaje",
                 input_html: { autocomplete: "Mensaje"} %>
                 <%= recaptcha_tags %>
-                <button class="main-button form-button button-link">
-                    <%= f.button :submit, "Enviar" %>
-                </button>
+                <div class="form-btn-container">
+                    <button id="contact-form-button" class="main-button form-button button-link">
+                        <%= f.button :submit, "Enviar" %>
+                    </button>
+                </div>
         <% end %>
     </div>
 </div>
