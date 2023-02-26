@@ -13,9 +13,10 @@
 
   <body>
     <div id="wrapper">
-      <%= render "shared/navbar" %>
-      <%= render "shared/flashes" %>
+      <%= render "shared/components/navbar" %>
+      <%= render "shared/components/flashes" %>
       <%= yield %>
+      <%= render "shared/components/footer" %>
     </div>
   </body>
 </html>

@@ -1,0 +1,50 @@
+<%# Footer section %>
+
+<div class="site-footer">
+    <div class="main-site-container">
+        <div class="footer-container">
+            <div class="footer-first-section">
+                <div class="footer-left-column">
+                    <div class="footer-logo">
+                        <%= link_to root_path, class: "navbar-brand" do %>
+                           <%= image_tag "https://res.cloudinary.com/dfyhqslry/image/upload/v1677429425/Component_33_2_vrlquu.svg" %>
+                        <% end %>
+                    </div>
+                    <p>Code web soluciones digitales</p>
+                    <p>Teléfono: 661818769s</p>
+                    <p>Email: contacto@code-web.es</p>
+                </div>
+                <div class="footer-center-column">
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#about" class="footer-link">Servicios</a>
+                        </li>
+                        <li>
+                         <a href="#portfolio" class="footer-link">Precios</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer-link">Blog</a>
+                        </li>
+                        <li data-turbo="false">
+                         <%= link_to "Contacto", contacto_path, class:"footer-link" %>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-right-column">
+                    <ul>
+                        <li>
+                            <a href="#about" class="footer-link">Sobre nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="footer-link">Politicas de privacidad</a>
+                        </li>
+                    </ul>
+                    <%= render "shared/social_media_icons" %>
+                </div>
+            </div>
+            <div class="footer-second-section">
+                <p>Designed & built by Code Web 2022</p>
+            </div>
+        </div>
+    </div>
+</div>
