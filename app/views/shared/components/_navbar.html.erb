@@ -9,9 +9,11 @@
     </div>
     <div class="nav-elements">
       <ul class="nav-links">
-        <li><a href="#about" class="nav-link nav-font">Servicios</a></li>
         <li>
-          <a href="#portfolio" class="nav-link nav-font">Precios</a>
+          <%= link_to "Servicios", services_path, class:"nav-link nav-font" %>
+        </li>
+        <li>
+          <%= link_to "Precios", packages_path, class:"nav-link nav-font" %>
         </li>
         <li>
           <a href="#contact" class="nav-link nav-font">Blog</a>

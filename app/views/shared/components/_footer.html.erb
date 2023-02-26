@@ -11,16 +11,16 @@
                         <% end %>
                     </div>
                     <p>Code web soluciones digitales</p>
-                    <p>Teléfono: 661818769s</p>
+                    <p>Teléfono: 661818769</p>
                     <p>Email: contacto@code-web.es</p>
                 </div>
                 <div class="footer-center-column">
                     <ul class="footer-links">
                         <li>
-                            <a href="#about" class="footer-link">Servicios</a>
+                         <%= link_to "Servicios", services_path, class:"footer-link" %>
                         </li>
                         <li>
-                         <a href="#portfolio" class="footer-link">Precios</a>
+                         <%= link_to "Precios", packages_path, class:"footer-link" %>
                         </li>
                         <li>
                             <a href="#contact" class="footer-link">Blog</a>
@@ -39,7 +39,7 @@
                             <a href="#about" class="footer-link">Politicas de privacidad</a>
                         </li>
                     </ul>
-                    <%= render "shared/social_media_icons" %>
+                    <%= render "shared/components/social_media_icons" %>
                 </div>
             </div>
             <div class="footer-second-section">
