@@ -7,12 +7,28 @@
                 <div class="footer-left-column">
                     <div class="footer-logo">
                         <%= link_to root_path, class: "navbar-brand" do %>
-                           <%= image_tag "https://res.cloudinary.com/dfyhqslry/image/upload/v1677429425/Component_33_2_vrlquu.svg" %>
+                           <%= image_tag "https://res.cloudinary.com/dfyhqslry/image/upload/v1673690849/code%20web/Logo_osldad.svg" %>
                         <% end %>
                     </div>
                     <p>Code web soluciones digitales</p>
                     <p>Teléfono: 661818769</p>
                     <p>Email: contacto@code-web.es</p>
+                </div>
+                <div class="footer-center-column">
+                    <ul class="footer-links">
+                        <li>
+                         <%= link_to "Servicios", services_path, class:"footer-link" %>
+                        </li>
+                        <li>
+                         <%= link_to "Precios", packages_path, class:"footer-link" %>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer-link">Blog</a>
+                        </li>
+                        <li data-turbo="false">
+                         <%= link_to "Contacto", contacto_path, class:"footer-link" %>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer-center-column">
                     <ul class="footer-links">
