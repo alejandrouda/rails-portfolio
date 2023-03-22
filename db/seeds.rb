@@ -14,18 +14,22 @@ Service.delete_all
 p "Creating packages..."
 
 restaurant_package = Package.new(
-    name:"Web corporativa",
+    name:"Restaurant",
     description: "a",
-    price: 490
+    price: 490,
+    currency: "€",
+    items:["Diseño web", "3 meses de mantenimiento", "QR Carta digital interactiva", "Sistema de delivery"]
 )
 
 restaurant_package.save!
 p restaurant_package
 
 web_package = Package.new(
-    name:"Restaurante",
+    name:"Web corporativa",
     description: "a",
-    price: 390
+    price: 390,
+    currency: "€",
+    items:["Diseño web", "3 meses de mantenimiento"]
 )
 
 web_package.save!
@@ -34,16 +38,20 @@ p web_package
 online_store_package = Package.new(
     name:"Tienda online",
     description: "a",
-    price: 790
+    price: 790,
+    currency: "€",
+    items:["Diseño web", "3 meses de mantenimiento", "Pagos seguros"]
 )
 
 online_store_package.save!
 p online_store_package
 
 custom_design_package = Package.new(
-    name:"Sitio web personalizado",
+    name:"Sitio personalizado",
     description: "a",
-    price: 25
+    price: 25,
+    currency: "€ / h",
+    items:["Diseño web a medida", "Funcionalidades personalizadas", "Integraciones"]
 )
 
 custom_design_package.save!
@@ -54,18 +62,22 @@ p"Packages created..."
 p "Creating services..."
 
 restaurant_service = Service.new(
-    name:"Web corporativa",
+    name:"Restaurant",
     title:"Funcionalidad y diseño",
-    description: "Give consumers seamless access to your product catalog via AI-powered search, discovery and recommendations, while increasing your online revenue."
+    description: "Give consumers seamless access to your product catalog via AI-powered search, discovery and recommendations, while increasing your online revenue.",
+    image: "https://res.cloudinary.com/dfyhqslry/image/upload/v1674067481/code%20web/Group_33_aorcii.svg",
+    url:"#"
 )
 
 restaurant_service.save!
 p restaurant_service
 
 web_service = Service.new(
-    name:"Restaurante",
+    name:"Web corporativa",
     title:"Mejora tu visibilidad en la web",
-    description: "Give consumers seamless access to your product catalog via AI-powered search, discovery and recommendations, while increasing your online revenue."
+    description: "Give consumers seamless access to your product catalog via AI-powered search, discovery and recommendations, while increasing your online revenue.",
+    image: "https://res.cloudinary.com/dfyhqslry/image/upload/v1674067481/code%20web/Group_33_aorcii.svg",
+    url:"#"
 )
 
 web_service.save!
@@ -74,7 +86,9 @@ p web_service
 online_store_service = Service.new(
     name:"Tienda online",
     title:"Vende tus productos online!",
-    description: "Give consumers seamless access to your product catalog via AI-powered search, discovery and recommendations, while increasing your online revenue."
+    description: "Give consumers seamless access to your product catalog via AI-powered search, discovery and recommendations, while increasing your online revenue.",
+    image: "https://res.cloudinary.com/dfyhqslry/image/upload/v1674067481/code%20web/Group_33_aorcii.svg",
+    url:"#"
 )
 
 online_store_service.save!

@@ -1,23 +1,29 @@
 <%# Services section %>
+
+
+<%= content_tag :div, class: "temp_information", data: {services: @services} do %>
+<% end %>
 <div class="services-section">
     <h2 class="text-align-center">Elige la solución que mejor se adapte a tu negocio</h2>
     <div class="main-site-container">
         <ul class="services-list">
-            <li>
-                <h5 class="services-list--selected">RESTAURANTES</h5>
-            </li>
-            <li>
-                <h5>WEB CORPORATIVA</h5>
-            </li>
-            <li>
-                <h5>TIENDA ONLINE</h5>
-            </li>
+            <% @services.each do |service|  %>
+                <li>
+                    <h5 class="services-tab"><%=service.name.upcase%></h5>
+                </li>
+            <%end %>
         </ul>
         
         <select> 
-            <option value="" selected="selected">Restaurantes</option>
-            <option value="/">Web corporativa</option> 
-            <option value="/collections/all">Tienda online</option> 
+            <% @services.each do |service|  %>
+                <li>
+                    <%# <h5 class="services-list--selected"></h5> %>
+                    <option value="" selected="selected"><%=service.name%></option>
+                </li>
+            <%end %>
+            <%# <option value="" selected="selected">Restaurantes</option>
+            <option value="">Web corporativa</option> 
+            <option value="">Tienda online</option>  %>
         </select> 
 
         <div class="services-render">

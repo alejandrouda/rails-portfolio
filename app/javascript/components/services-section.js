@@ -16,3 +16,27 @@ servicesElementSwitch();
 
 // optimize performance, e.g setTimeOut 250ms
 window.onresize = servicesElementSwitch;
+
+const tabHandler = () => {
+  const servicesRawData =
+    document.querySelector(".temp_information").dataset.services;
+  const servicesData = JSON.parse(servicesRawData);
+  const tabs = document.querySelectorAll(".services-tab");
+  console.log(servicesData);
+  // Adding default selected for first tab
+  tabs[0].classList.value = "services-tab services-list--selected";
+
+  const clickHandler = (event) => {
+    tabs.forEach((tab) => {
+      console.log(tab.classList.value);
+      tab.classList.value = "services-tab";
+    });
+    event.target.classList.value = "services-tab services-list--selected";
+  };
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", clickHandler);
+  });
+};
+
+tabHandler();

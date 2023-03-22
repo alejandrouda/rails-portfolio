@@ -235,6 +235,10 @@ h6 {
   }
   .package-description {
     background-color: $primary-color-light-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
   }
   h4 {
     font-size: 24px;
