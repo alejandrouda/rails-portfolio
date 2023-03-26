@@ -3,15 +3,13 @@
         <h3>Contacto</h3>
 
         <%= simple_form_for(@contact_form, url: contacto_path) do |f| %>
-            <div class="form-group">
-                <%= f.input :name,
-                    required: true,
-                    autofocus: true,
-                    autocomplete: false,
-                    error: "Por favor rellena este campo",
-                    label: "Nombre",
-                    input_html: { autocomplete: "Nombre", class: "form-control"} %>    
-            </div>
+            <%= f.input :name,
+                required: true,
+                autofocus: true,
+                autocomplete: false,
+                error: "Por favor rellena este campo",
+                label: "Nombre",
+                input_html: { autocomplete: "Nombre" } %>    
             <%= f.input :email,
                 required: true,
                 autofocus: true,
