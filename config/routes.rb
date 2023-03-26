@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   resources :packages, only: [:index, :show]
   resources :contact_forms, only: [:new, :create]
   get 'contacto', to: 'contact_forms#new'
+  post '/contacto', to: 'contact_forms#create', as: 'create_contact_forms'
   # resources :dashboard, only: [:index] do
   #   resources :articles
   #   resources :services

@@ -38,11 +38,15 @@ class ContactFormsController < ApplicationController
                 contact_email(contact_form_params)
                 redirect_to contacto_path, notice: "Mensaje enviado"
             else
-                redirect_to contacto_path, notice: "Por favor completa todos los campos del formulario."
+                # redirect_to contacto_path, notice: "Por favor completa todos los campos del formulario."
+                flash.now[:error] = "Invalid input. Please correct the errors below."
+                render :new, contacto_path: contacto_path
+                p 'hereeeeeeeeeeeee', @contact_form.errors
             end
 
         else
             redirect_to contacto_path, notice: "Fallo al autorizar reCAPTCHA. Por favor intente nuevamente."
+           
         end
     end
 

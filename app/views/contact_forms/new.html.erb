@@ -1,24 +1,29 @@
 <div class="main-site-container">
     <div class="contact-section" data-turbo="false" >
         <h3>Contacto</h3>
-        <%= simple_form_for(@contact_form) do |f| %>
-            <%= f.input :name,
-                required: true,
-                autofocus: true,
-                autocomplete: false,
-                label: "Nombre",
-                input_html: { autocomplete: "Nombre"} %>
+
+        <%= simple_form_for(@contact_form, url: contacto_path) do |f| %>
+            <div class="form-group">
+                <%= f.input :name,
+                    required: true,
+                    autofocus: true,
+                    autocomplete: false,
+                    error: "Por favor rellena este campo",
+                    label: "Nombre",
+                    input_html: { autocomplete: "Nombre", class: "form-control"} %>    
+            </div>
             <%= f.input :email,
                 required: true,
                 autofocus: true,
                 autocomplete: false,
                 label: "Email",
                 as: :email,
-                error: "Please put a valid email",
+                error: "Por favor rellena este campo con un mail válido",
                 input_html: { autocomplete: "Email"} %>
             <%= f.input :phone,
                 required: true,
                 autofocus: true,
+                error: "Por favor rellena este campo",
                 autocomplete: false,
                 label: "Telefono",
                 as: :tel,
@@ -27,6 +32,7 @@
                 required: true,
                 autofocus: true,
                 autocomplete: false,
+                error: "Por favor rellena este campo",
                 label: "Mensaje",
                 input_html: { autocomplete: "Mensaje"} %>
                 <%= recaptcha_tags %>
