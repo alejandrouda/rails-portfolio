@@ -41,7 +41,6 @@ class ContactFormsController < ApplicationController
                 # redirect_to contacto_path, notice: "Por favor completa todos los campos del formulario."
                 flash.now[:error] = "Invalid input. Please correct the errors below."
                 render :new, contacto_path: contacto_path
-                p 'hereeeeeeeeeeeee', @contact_form.errors
             end
 
         else

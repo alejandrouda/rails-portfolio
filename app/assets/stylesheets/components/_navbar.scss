@@ -66,6 +66,12 @@ nav {
   align-items: center;
 }
 
+.navlink-active {
+  color: $primary-color;
+  text-decoration: underline $primary-color;
+  text-underline-offset: 12px;
+}
+
 .burger-menu {
   display: none;
 }

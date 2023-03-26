@@ -3,6 +3,7 @@
         <h3>Contacto</h3>
 
         <%= simple_form_for(@contact_form, url: contacto_path) do |f| %>
+            <%= f.hidden_field :current_path, value: request.path %>
             <%= f.input :name,
                 required: true,
                 autofocus: true,
