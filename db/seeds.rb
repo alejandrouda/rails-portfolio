@@ -74,7 +74,7 @@ p restaurant_service
 
 web_service = Service.new(
     name:"Web corporativa",
-    title:"Mejora tu visibilidad en la web",
+    title:"Visibilidad en la web",
     description: "Give consumers seamless access to your product catalog via AI-powered search, discovery and recommendations, while increasing your online revenue.",
     image: "https://res.cloudinary.com/dfyhqslry/image/upload/v1674067481/code%20web/Group_33_aorcii.svg",
     url:"#"

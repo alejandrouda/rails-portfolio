@@ -14,30 +14,32 @@
             <%end %>
         </ul>
         
-        <select> 
-            <% @services.each do |service|  %>
-                <li>
-                    <%# <h5 class="services-list--selected"></h5> %>
-                    <option value="" selected="selected"><%=service.name%></option>
-                </li>
-            <%end %>
-            <%# <option value="" selected="selected">Restaurantes</option>
-            <option value="">Web corporativa</option> 
-            <option value="">Tienda online</option>  %>
+        <select id="services-select"> 
+            <%# <ul class="services-options"> %>
+                <% @services.each do |service|  %>
+                    <li>
+                        <%# <h5 class="services-list--selected"></h5> %>
+                        <option value="<%=service.name%>" class="services-option"><%=service.name%></option>
+                    </li>
+                <%end %>
+                <%# <option value="" selected="selected">Restaurantes</option>
+                <option value="">Web corporativa</option> 
+                <option value="">Tienda online</option>  %>
+            <%# </ul> %>
         </select> 
 
         <div class="services-render">
-          <div class="services-description">
-            <h5 class="services-description_indicator">RESTAURANTES</h5>
-            <h3 class="services-description-header">Mejora tu visibilidad en la web</h3>
-            <h6>Give consumers seamless access to your product catalog via AI-powered search, discovery and recommendations, while increasing your online revenue.</h6>
-            <a href="#">
-                <h5 class="services-description_link">SABER MÁS ></h5>
-            </a>
-          </div>
-          <div class="services-image">
-            <img src="https://res.cloudinary.com/dfyhqslry/image/upload/v1674067481/code%20web/Group_33_aorcii.svg" alt="Laptop navigating restaurant website image">
-          </div>
+            <div class="services-description">
+                <h5 class="services-description_indicator"><%= @services[0].name.upcase %></h5>
+                <h3 class="services-description-header"><%= @services[0].title %></h3>
+                <h6><%= @services[0].description %></h6>
+                <a href="#">
+                    <h5 class="services-description_link">SABER MÁS ></h5>
+                </a>
+                </div>
+                <div class="services-image">
+                <img src=<%= @services[0].image %> alt="Laptop navigating restaurant website image">
+            </div>
         </div>
     </div>
 </div>
