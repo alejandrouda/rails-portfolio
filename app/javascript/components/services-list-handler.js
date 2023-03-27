@@ -63,3 +63,8 @@ const serviceListHandler = () => {
 };
 
 serviceListHandler();
+
+// Testing turbolinks:load event
+document.addEventListener("turbolinks:load", () => {
+  console.log("hee");
+});
