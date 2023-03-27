@@ -16,6 +16,7 @@ class ContactFormsController < ApplicationController
             "content"=>[{"type"=>"text/plain", "value"=>"
     Name: #{form_data[:name]}
     Mail: #{form_data[:email]}
+    Phone: #{form_data[:phone]}
 
     #{form_data[:content]}"}]
         }
