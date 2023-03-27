@@ -33,26 +33,29 @@
                 <div class="footer-center-column">
                     <ul class="footer-links">
                         <li>
-                         <%= link_to "Web corporativa", services_path, class:"footer-link" %>
+                         <%= link_to "Web corporativa", packages_path, class:"footer-link" %>
                         </li>
                         <li>
                          <%= link_to "Restaurantes", packages_path, class:"footer-link" %>
                         </li>
                         <li>
-                            <a href="#contact" class="footer-link">Tienda online</a>
+                         <%= link_to "Tienda online", packages_path, class:"footer-link" %>
                         </li>
                         <li data-turbo="false">
-                         <%= link_to "Sitio personalizado", contacto_path, class:"footer-link" %>
+                         <%= link_to "Sitio personalizado", packages_path, class:"footer-link" %>
                         </li>
                     </ul>
                 </div>
                 <div class="footer-right-column">
                     <ul>
                         <li>
-                            <a href="#about" class="footer-link">Sobre nosotros</a>
+                            <%= link_to "Aviso legal", policy_path("aviso-legal"), class:"footer-link" %>
                         </li>
                         <li>
-                            <a href="#about" class="footer-link">Politicas de privacidad</a>
+                            <%= link_to "Políticas de privacidad", policy_path("privacidad"), class:"footer-link" %>
+                        </li>
+                        <li>
+                            <%= link_to "Políticas de cookies", policy_path("cookies"), class:"footer-link" %>
                         </li>
                     </ul>
                     <%= render "shared/components/social_media_icons" %>

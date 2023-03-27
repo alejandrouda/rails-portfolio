@@ -10,6 +10,8 @@ p "Deleting packages..."
 Package.delete_all
 p "Deleting services..."
 Service.delete_all
+p "Deleting policies..."
+Policy.delete_all
 
 p "Creating packages..."
 
@@ -94,6 +96,35 @@ online_store_service = Service.new(
 online_store_service.save!
 p online_store_service
 
-p "Services created..."
+p "Policies created..."
+
+aviso_legal = Policy.new(
+    title:"Aviso legal",
+    url_handle:"aviso-legal",
+    content: "test l"
+)
+
+aviso_legal.save!
+p aviso_legal
+
+politica_privacidad = Policy.new(
+    title:"Politica de privacidad",
+    url_handle:"privacidad",
+    content: "test p"
+)
+
+politica_privacidad.save!
+p politica_privacidad
+
+politica_cookies = Policy.new(
+    title:"Politica de cookies",
+    url_handle:"cookies",
+    content: "test c"
+)
+
+politica_cookies.save!
+p politica_cookies
+
+p "Policies created..."
 
 p "Seeds are successfuly completed!"

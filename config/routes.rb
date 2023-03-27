@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'policies/show'
   devise_scope :user do
     get "/sign_in" => "devise/sessions#new" # custom path to login/sign_in
     get "/sign_up" => "devise/registrations#new", as: "new_user_registration" # custom path to sign_up/registration
@@ -16,6 +17,8 @@ Rails.application.routes.draw do
   resources :services, only: [:index, :show]
   resources :packages, only: [:index, :show]
   resources :contact_forms, only: [:new, :create]
+  resources :policies, param: :url_handle, only: [:show]
+
   get 'contacto', to: 'contact_forms#new'
   post '/contacto', to: 'contact_forms#create', as: 'create_contact_forms'
   # resources :dashboard, only: [:index] do
