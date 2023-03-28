@@ -33,9 +33,8 @@ class ContactFormsController < ApplicationController
     def create
         @contact_form = ContactForm.new(contact_form_params)
         if verify_recaptcha(model: @contact_form)
-            p '---------------verification successful---------------'
             
-            if @contact_form.save
+            if @contact_form.valid?
                 contact_email(contact_form_params)
                 redirect_to contacto_path, notice: "Mensaje enviado"
             else
@@ -53,7 +52,7 @@ class ContactFormsController < ApplicationController
     private
 
     def contact_form_params
-        params.require(:contact_form).permit(:name, :email, :phone, :content)
+        params.require(:contact_form).permit(:name, :email, :phone, :content, :policy_consent)
     end
 
 end

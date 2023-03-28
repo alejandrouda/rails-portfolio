@@ -66,7 +66,7 @@ p "Creating services..."
 restaurant_service = Service.new(
     name:"Restaurant",
     title:"Funcionalidad y diseño",
-    description: "Give consumers seamless access to your product catalog via AI-powered search, discovery and recommendations, while increasing your online revenue.",
+    description: "Somos expertos en servicios digitales para restaurantes. Contáctanos para conocer en detalle nuestros productos y servicios.",
     image: "https://res.cloudinary.com/dfyhqslry/image/upload/v1674067481/code%20web/Group_33_aorcii.svg",
     url:"#"
 )
@@ -77,7 +77,7 @@ p restaurant_service
 web_service = Service.new(
     name:"Web corporativa",
     title:"Visibilidad en la web",
-    description: "Give consumers seamless access to your product catalog via AI-powered search, discovery and recommendations, while increasing your online revenue.",
+    description: "¿Tienes un negocio? Ofrecemos un servicio económico y de calidad para que ofrezcas un sitio web a tus clientes.",
     image: "https://res.cloudinary.com/dfyhqslry/image/upload/v1674067481/code%20web/Group_33_aorcii.svg",
     url:"#"
 )
@@ -88,7 +88,7 @@ p web_service
 online_store_service = Service.new(
     name:"Tienda online",
     title:"Vende tus productos online!",
-    description: "Give consumers seamless access to your product catalog via AI-powered search, discovery and recommendations, while increasing your online revenue.",
+    description: "Si necesitas vender tus productos online trabajamos con las plataformas tecnológicas más importantes del mercado.",
     image: "https://res.cloudinary.com/dfyhqslry/image/upload/v1674067481/code%20web/Group_33_aorcii.svg",
     url:"#"
 )

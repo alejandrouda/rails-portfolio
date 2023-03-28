@@ -18,7 +18,7 @@ const serviceListHandler = () => {
       <h5 class="services-description_indicator"> ${selectedService.name.toUpperCase()}</h5>
       <h3 class="services-description-header">${selectedService.title}</h3>
       <h6>${selectedService.description}</h6>
-      <a href="#">
+      <a href="/contacto" data-turbo="false">
           <h5 class="services-description_link">SABER MÁS ></h5>
       </a>
       </div>

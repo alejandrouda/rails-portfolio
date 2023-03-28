@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_27_102450) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_28_150332) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -43,6 +43,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_27_102450) do
     t.string "email"
     t.text "content"
     t.string "phone"
+    t.boolean "policy_consent"
   end
 
   create_table "packages", force: :cascade do |t|

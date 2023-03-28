@@ -34,7 +34,19 @@
                 error: "Por favor rellena este campo",
                 label: "Mensaje",
                 input_html: { autocomplete: "Mensaje"} %>
+            <%= f.label :policy_consent, required:true, class:"mb-4" do%>
+                <%= f.check_box :policy_consent, class: "checkbox-lg"%>
+                Acepto expresamente las <%= link_to "Políticas de privacidad", policy_path("privacidad")%> y el <%= link_to "Aviso legal", policy_path("aviso-legal") %> *
+                <% if f.object.errors[:policy_consent].any? %>
+                    <div style="mt-2">
+                        <p class="form-error-message">Por favor marque esta casilla</p>
+                    </div>
+                <% end %>
+            <% end %>
+            
                 <%= recaptcha_tags %>
+
+            
                 <div class="form-btn-container">
                     <button id="contact-form-button" class="main-button form-button button-link">
                         <%= f.button :submit, "Enviar" %>
