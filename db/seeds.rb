@@ -40,9 +40,9 @@ p web_package
 online_store_package = Package.new(
     name:"Tienda online",
     description: "a",
-    price: 790,
+    price: 990,
     currency: "€",
-    items:["Diseño web", "3 meses de mantenimiento", "Pagos seguros"]
+    items:["Diseño web", "3 meses de mantenimiento", "Pagos seguros", "Búsqueda optimizada"]
 )
 
 online_store_package.save!
