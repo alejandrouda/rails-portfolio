@@ -130,6 +130,12 @@ h6 {
   text-align: center;
 }
 
+p {
+  font-family: $body-font;
+  font-size: 16px;
+  color: $primary-text;
+}
+
 // Services section
 
 .services-landing-wrap {

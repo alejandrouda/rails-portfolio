@@ -27,7 +27,7 @@ restaurant_package.save!
 p restaurant_package
 
 web_package = Package.new(
-    name:"Web corporativa",
+    name:"Emprendimientos",
     description: "a",
     price: 390,
     currency: "€",
@@ -75,10 +75,10 @@ restaurant_service.save!
 p restaurant_service
 
 web_service = Service.new(
-    name:"Web corporativa",
+    name:"Emprendimientos",
     title:"Visibilidad en la web",
     description: "¿Tienes un negocio? Ofrecemos un servicio económico y de calidad para que ofrezcas un sitio web a tus clientes.",
-    image: "https://res.cloudinary.com/dfyhqslry/image/upload/v1674067481/code%20web/Group_33_aorcii.svg",
+    image: "https://res.cloudinary.com/dqstmox0s/image/upload/v1680023478/Group_33_x7ygnt.png",
     url:"#"
 )
 
@@ -89,7 +89,7 @@ online_store_service = Service.new(
     name:"Tienda online",
     title:"Vende tus productos online!",
     description: "Si necesitas vender tus productos online trabajamos con las plataformas tecnológicas más importantes del mercado.",
-    image: "https://res.cloudinary.com/dfyhqslry/image/upload/v1674067481/code%20web/Group_33_aorcii.svg",
+    image: "https://res.cloudinary.com/dqstmox0s/image/upload/v1680024637/Group_33_fo5o5r.png",
     url:"#"
 )
 
@@ -100,8 +100,7 @@ p "Policies created..."
 
 aviso_legal = Policy.new(
     title:"Aviso legal",
-    url_handle:"aviso-legal",
-    content: "test l"
+    url_handle:"aviso-legal"
 )
 
 aviso_legal.save!
@@ -109,8 +108,7 @@ p aviso_legal
 
 politica_privacidad = Policy.new(
     title:"Politica de privacidad",
-    url_handle:"privacidad",
-    content: "test p"
+    url_handle:"privacidad"
 )
 
 politica_privacidad.save!
@@ -118,8 +116,7 @@ p politica_privacidad
 
 politica_cookies = Policy.new(
     title:"Politica de cookies",
-    url_handle:"cookies",
-    content: "test c"
+    url_handle:"cookies"
 )
 
 politica_cookies.save!

@@ -15,17 +15,12 @@
         </ul>
         
         <select id="services-select"> 
-            <%# <ul class="services-options"> %>
                 <% @services.each do |service|  %>
                     <li>
                         <%# <h5 class="services-list--selected"></h5> %>
                         <option value="<%=service.name%>" class="services-option"><%=service.name%></option>
                     </li>
                 <%end %>
-                <%# <option value="" selected="selected">Restaurantes</option>
-                <option value="">Web corporativa</option> 
-                <option value="">Tienda online</option>  %>
-            <%# </ul> %>
         </select> 
 
         <div class="services-render">

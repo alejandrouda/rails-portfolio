@@ -1,5 +1,14 @@
-<h1>Policies#show</h1>
-<p>Find me in app/views/policies/show.html.erb</p>
-<br><br><br><br><br><br>
-<h1><%= @policy.title %></h1>
-<p><%= @policy.content %></p>
+
+<div class="main-site-container" style="padding-top:120px">
+    <h2 style="text-align: center; margin-bottom:40px;"><%= @policy.title %></h2>
+
+    <% if @policy.url_handle == "aviso-legal" %>
+        <%= render "policies/aviso_legal" %>
+     <% end %>
+    <% if @policy.url_handle == "privacidad" %>
+        <%= render "policies/politicas_privacidad" %>
+     <% end %>
+    <% if @policy.url_handle == "cookies" %>
+        <%= render "policies/politicas_cookies" %>
+     <% end %>
+</div>
