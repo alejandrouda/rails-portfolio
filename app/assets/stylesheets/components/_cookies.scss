@@ -1,0 +1,58 @@
+.policy-content {
+  margin-bottom: 50px;
+  h4 {
+    font-size: 23px;
+    padding-bottom: 10px;
+  }
+}
+
+.cookies-footer {
+  position: fixed;
+  bottom: 40px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.cookies-btns {
+  text-align: right;
+}
+
+.cookies-btn-primary {
+  width: 140px;
+  color: white;
+  background-color: $primary-color;
+  font-weight: 500;
+}
+
+.cookies-btn-primary:hover {
+  color: white;
+}
+
+.cookies-btn-secondary {
+  width: 140px;
+  color: gray;
+  background-color: $white;
+}
+
+@media only screen and (max-width: 1400px) {
+  .cookies-footer {
+    width: 100%;
+    margin-left: 0;
+    bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .cookies-btns {
+    text-align: center;
+  }
+
+  .cookies-btn-primary {
+    width: 80%;
+  }
+
+  .cookies-btn-secondary {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}

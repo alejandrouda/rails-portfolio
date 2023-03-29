@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'cookies/index'
   get 'policies/show'
   devise_scope :user do
     get "/sign_in" => "devise/sessions#new" # custom path to login/sign_in
@@ -18,6 +19,9 @@ Rails.application.routes.draw do
   resources :packages, only: [:index, :show]
   resources :contact_forms, only: [:new, :create]
   resources :policies, param: :url_handle, only: [:show]
+
+  get 'cookies', to: "cookies#index"
+  get 'cookies/consent', to: "cookies#consent", as: "cookie_consent"
 
   get 'contacto', to: 'contact_forms#new'
   post '/contacto', to: 'contact_forms#create', as: 'create_contact_forms'
