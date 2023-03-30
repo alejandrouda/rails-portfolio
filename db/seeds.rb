@@ -20,7 +20,7 @@ restaurant_package = Package.new(
     description: "a",
     price: 490,
     currency: "€",
-    items:["Diseño web", "3 meses de mantenimiento", "QR Carta digital interactiva", "Sistema de delivery"]
+    items:["Diseño web responsive", "3 meses de mantenimiento", "QR Carta digital interactiva", "Sistema de delivery"]
 )
 
 restaurant_package.save!
@@ -31,7 +31,7 @@ web_package = Package.new(
     description: "a",
     price: 390,
     currency: "€",
-    items:["Diseño web", "3 meses de mantenimiento"]
+    items:["Diseño web responsive", "3 meses de mantenimiento"]
 )
 
 web_package.save!
@@ -42,7 +42,7 @@ online_store_package = Package.new(
     description: "a",
     price: 990,
     currency: "€",
-    items:["Diseño web", "3 meses de mantenimiento", "Pagos seguros", "Búsqueda optimizada"]
+    items:["Diseño web responsive", "3 meses de mantenimiento", "Pagos seguros", "Búsqueda optimizada"]
 )
 
 online_store_package.save!
