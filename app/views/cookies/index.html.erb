@@ -20,13 +20,13 @@
                         cookie_consent_path(consent:true), 
                         method: :post,
                         class:"btn btn-primary cookies-btn-primary",
-                        onclick: "hideModal()"%>
+                        onclick: "acceptCookies()"%>
 
                         <%= button_to "Rechazar", 
                         cookie_consent_path(consent:false),
                          method: :post,
                          class:"btn btn-secondary cookies-btn-secondary",
-                         onclick: "hideModal()"%>
+                         onclick: ""%>
 
                         <!-- This button would take to the modal to configure more options -->
                         <%# <button type="button" class="btn btn-secondary cookies-btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -71,7 +71,7 @@
                         cookie_consent_path(consent:false),
                          method: :post,
                          class:"btn btn-secondary cookies-btn-secondary",
-                         onclick: "hideModal()"%>
+                         onclick: "hideModal() acceptCookies"%>
         </div>
         </div>
     </div>
@@ -88,16 +88,27 @@
         });
 
         function hideModal() {
-        let consentModal = document.getElementById('exampleModal');
-        if (consentModal) {
-            let modalToHide = bootstrap.Modal.getInstance(consentModal);
-            modalToHide.hide();
-            let modalBackdrop = document.querySelector('.modal-backdrop');
-            if (modalBackdrop) {
-                modalBackdrop.remove(); // remove the modal backdrop element
+            let consentModal = document.getElementById('exampleModal');
+            if (consentModal) {
+                let modalToHide = bootstrap.Modal.getInstance(consentModal);
+                modalToHide.hide();
+                let modalBackdrop = document.querySelector('.modal-backdrop');
+                if (modalBackdrop) {
+                    modalBackdrop.remove(); // remove the modal backdrop element
+                }
+                document.body.classList.remove('modal-open'); // remove the class from the body element
             }
-            document.body.classList.remove('modal-open'); // remove the class from the body element
         }
+
+        const acceptCookies = () => {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-7VK0K3J5X7');
+                        gtag('consent', 'default', {
+            'ad_storage': 'granted',
+            'analytics_storage': 'granted'
+            });
         }
     </script>
 

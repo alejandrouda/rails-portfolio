@@ -11,17 +11,7 @@
 
     <!-- Google tag (gtag.js) conditionally configure depending on <h1><%= session[:cookie_consent] %></h1> -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VK0K3J5X7"></script>
-    <%# <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'denied'
-    });
-      gtag('js', new Date());
-      gtag('config', 'G-7VK0K3J5X7');
 
-    </script> %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
