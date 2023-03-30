@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   resources :policies, param: :url_handle, only: [:show]
 
   get 'cookies', to: "cookies#index"
-  get 'cookies/consent', to: "cookies#consent", as: "cookie_consent"
+  post 'cookies/consent', to: "cookies#consent", as: "cookie_consent"
 
   get 'contacto', to: 'contact_forms#new'
   post '/contacto', to: 'contact_forms#create', as: 'create_contact_forms'

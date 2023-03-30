@@ -1,6 +1,7 @@
 
 <%= turbo_frame_tag :cookie_consent do %> 
 
+
     <div class="cookies-footer">
         <div class="card">
             <div class="card-body row">
@@ -15,17 +16,24 @@
                 </div>
                 <div class="row">
                     <div class="col cookies-btns">
-                        <button type="button" class="btn btn-secondary cookies-btn-secondary" data-toggle="modal" data-target="#exampleModal">
-                        Más opciones
-                        </button>
-                        <button type="button" class="btn btn-secondary cookies-btn-secondary" data-toggle="modal" data-target="#exampleModal">
-                        Rechazar
-                        </button>
-                        <button type="button" class="btn btn-primary cookies-btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Aceptar
-                        </button>
-                    </div>
+                        <%= button_to "Aceptar", 
+                        cookie_consent_path(consent:true), 
+                        method: :post,
+                        class:"btn btn-primary cookies-btn-primary",
+                        onclick: "hideModal()"%>
 
+                        <%= button_to "Rechazar", 
+                        cookie_consent_path(consent:false),
+                         method: :post,
+                         class:"btn btn-secondary cookies-btn-secondary",
+                         onclick: "hideModal()"%>
+
+                        <!-- This button would take to the modal to configure more options -->
+                        <%# <button type="button" class="btn btn-secondary cookies-btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Más opciones
+                        </button> %>
+
+                    </div>
 
                 </div>
             </div>
@@ -46,18 +54,51 @@
             </button>
         </div>
         <div class="modal-body">
-        <p>Este sitio web utiliza cookies propias y de terceros para obtener estadísticas sobre los hábitos de navegación
-del usuario, mejorar su experiencia y permitirle compartir contenidos en redes sociales. Usted puede aceptar
-
-o rechazar las cookies, así como personalizar cuáles quiere deshabilitar.</p>
-<p>Puede encontrar toda la información de nuestra <%= link_to "Política de cookies", policy_path("cookies")%></p>
+        <p>Este sitio web utiliza cookies propias y de terceros para obtener estadísticas sobre los hábitos de navegación del usuario, mejorar su experiencia y permitirle compartir contenidos 
+        en redes sociales. Usted puede aceptar o rechazar las cookies, así como personalizar cuáles quiere deshabilitar.
+        </p>
+        <p>Puede encontrar toda la información de nuestra <%= link_to "Política de cookies", policy_path("cookies")%>
+        </p>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Rechazar</button>
-            <button type="button" class="btn btn-primary">Aceptar</button>
+                        <%= button_to "Aceptar", 
+                        cookie_consent_path(consent:true), 
+                        method: :post,
+                        class:"btn btn-primary cookies-btn-secondary",
+                        onclick: "hideModal()"%>
+
+                        <%= button_to "Rechazar", 
+                        cookie_consent_path(consent:false),
+                         method: :post,
+                         class:"btn btn-secondary cookies-btn-secondary",
+                         onclick: "hideModal()"%>
         </div>
         </div>
     </div>
     </div>
+
+    <script>
+    // add a listener to the 'hide.bs.modal' event
+        $('#exampleModal').on('hide.bs.modal', function () {
+        // remove the modal backdrop element
+        let modalBackdrop = document.querySelector('.modal-backdrop');
+        if (modalBackdrop) {
+            modalBackdrop.remove();
+        }
+        });
+
+        function hideModal() {
+        let consentModal = document.getElementById('exampleModal');
+        if (consentModal) {
+            let modalToHide = bootstrap.Modal.getInstance(consentModal);
+            modalToHide.hide();
+            let modalBackdrop = document.querySelector('.modal-backdrop');
+            if (modalBackdrop) {
+                modalBackdrop.remove(); // remove the modal backdrop element
+            }
+            document.body.classList.remove('modal-open'); // remove the class from the body element
+        }
+        }
+    </script>
 
 <% end %>

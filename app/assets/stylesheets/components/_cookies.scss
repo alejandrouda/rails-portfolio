@@ -13,15 +13,12 @@
   margin-left: 25%;
 }
 
-.cookies-btns {
-  text-align: right;
-}
-
 .cookies-btn-primary {
   width: 140px;
   color: white;
   background-color: $primary-color;
   font-weight: 500;
+  margin-right: 10px;
 }
 
 .cookies-btn-primary:hover {
@@ -34,11 +31,20 @@
   background-color: $white;
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1800px) {
   .cookies-footer {
     width: 100%;
     margin-left: 0;
     bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 521px) {
+  .cookies-btns {
+    display: flex;
+    text-align: right;
+    align-items: right;
+    justify-content: flex-end;
   }
 }
 
@@ -49,11 +55,12 @@
 
   .cookies-btn-primary {
     width: 80%;
+    margin-right: 0px;
+    margin-bottom: 10px;
   }
 
   .cookies-btn-secondary {
     width: 80%;
-    margin-bottom: 10px;
   }
 }
 
