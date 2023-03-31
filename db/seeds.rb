@@ -17,21 +17,21 @@ p "Creating packages..."
 
 web_package = Package.new(
     name:"Emprendimientos",
-    description: "Ideal para todo tipo de emprendimientos",
+    description: "a",
     price: 190,
     currency: "€",
-    items:["Diseño web responsive","Panel de admin", "3 meses de mantenimiento"]
+    items:["Diseño web responsive", "3 meses de mantenimiento"]
 )
 
 web_package.save!
 p web_package
 
 restaurant_package = Package.new(
-    name:"Restaurantes",
-    description: "La mejor opción para la presencia web de tu restaurante",
+    name:"Restaurant",
+    description: "a",
     price: 290,
     currency: "€",
-    items:["Diseño web responsive", "Panel de admin", "3 meses de mantenimiento", "QR Carta digital interactiva", "Sistema de delivery"]
+    items:["Diseño web responsive", "3 meses de mantenimiento", "QR Carta digital interactiva", "Sistema de delivery"]
 )
 
 restaurant_package.save!
@@ -39,25 +39,25 @@ p restaurant_package
 
 online_store_package = Package.new(
     name:"Tienda online",
-    description: "Utiliza una plataforma de e-commerce de última generación",
+    description: "a",
     price: 990,
     currency: "€",
-    items:["Diseño web responsive", "Panel de admin", "3 meses de mantenimiento", "Pagos seguros", "Búsqueda optimizada"]
+    items:["Diseño web responsive", "3 meses de mantenimiento", "Pagos seguros", "Búsqueda optimizada"]
 )
 
 online_store_package.save!
 p online_store_package
 
-# custom_design_package = Package.new(
-#     name:"Sitio personalizado",
-#     description: "a",
-#     price: 25,
-#     currency: "€ / h",
-#     items:["Diseño web a medida", "Funcionalidades personalizadas", "Integraciones"]
-# )
+custom_design_package = Package.new(
+    name:"Sitio personalizado",
+    description: "a",
+    price: 25,
+    currency: "€ / h",
+    items:["Diseño web a medida", "Funcionalidades personalizadas", "Integraciones"]
+)
 
-# custom_design_package.save!
-# p custom_design_package
+custom_design_package.save!
+p custom_design_package
 
 p"Packages created..."
 
