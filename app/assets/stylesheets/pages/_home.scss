@@ -126,6 +126,7 @@ h6 {
   font-weight: 500;
   color: darkgray;
 }
+
 .text-align-center {
   text-align: center;
 }
@@ -164,6 +165,7 @@ p {
   justify-content: space-between;
   width: 520px;
   margin: 80px auto 40px auto;
+
   li {
     cursor: pointer;
   }
@@ -178,6 +180,7 @@ p {
 
 .services-description {
   width: 42%;
+
   a {
     text-decoration: none;
   }
@@ -189,6 +192,7 @@ p {
 
 .services-image {
   width: 42%;
+
   img {
     width: 100%;
   }
@@ -228,22 +232,6 @@ p {
 }
 
 .package {
-  width: 300px;
-  border: solid 1px $primary-color;
-  .package-headers {
-    background-color: $primary-color-background;
-    border-bottom: solid 1px $primary-color;
-  }
-  .package-description {
-    background-color: $primary-color-light-background;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 20px;
-  }
-  h4 {
-    font-size: 24px;
-  }
   transition: 0.2s;
 }
 
@@ -259,6 +247,7 @@ p {
   border-bottom: solid 1px gray;
   padding: 30px;
   text-align: center;
+
   h5 {
     margin-bottom: 0;
   }
@@ -276,6 +265,7 @@ p {
 
 .included-item {
   display: flex;
+
   i {
     padding-top: 5px;
     padding-right: 10px;
@@ -400,6 +390,7 @@ p {
   .main-site-container {
     max-width: 1160px;
   }
+
   .landing-secondary-section {
     padding-top: 50px;
     max-width: 500px;
@@ -412,6 +403,7 @@ p {
   .package-description {
     height: 300px;
   }
+
   .included-items {
     margin-bottom: 0;
     padding: 5px 0;
@@ -430,6 +422,7 @@ p {
   .package-description {
     height: 300px;
   }
+
   .included-items {
     margin-bottom: 0;
     padding: 5px 0;
@@ -451,6 +444,7 @@ p {
   .package-headers {
     height: 120px;
   }
+
   .package-description {
     height: 260px;
   }
@@ -597,6 +591,7 @@ p {
   .services-list {
     display: none;
   }
+
   .services-section {
     select {
       display: block;
@@ -607,10 +602,12 @@ p {
       background-color: white;
     }
   }
+
   .services-render {
     flex-direction: column;
     margin: 0 auto;
   }
+
   .services-image {
     width: 80%;
     margin: 20px auto;
@@ -640,6 +637,7 @@ p {
   .package {
     width: 60%;
   }
+
   .packages {
     justify-content: space-around;
   }
@@ -671,6 +669,7 @@ p {
   .services-description {
     width: 100%;
   }
+
   .package {
     width: 65%;
   }
@@ -680,9 +679,11 @@ p {
   .main-site-container {
     padding: 0 20px;
   }
+
   .package {
     width: 75%;
   }
+
   .package-headers {
     height: 120px;
   }
@@ -692,6 +693,7 @@ p {
   .main-site-container {
     padding: 0 20px;
   }
+
   .package {
     width: 80%;
   }
@@ -718,12 +720,15 @@ p {
   h4 {
     font-size: 18px;
   }
+
   .packages-section {
     padding-top: 40px;
   }
+
   .packages-header {
     padding-bottom: 40px;
   }
+
   .package {
     width: 100%;
   }
