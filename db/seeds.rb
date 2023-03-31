@@ -15,27 +15,27 @@ Policy.delete_all
 
 p "Creating packages..."
 
-restaurant_package = Package.new(
-    name:"Restaurant",
-    description: "a",
-    price: 490,
-    currency: "€",
-    items:["Diseño web responsive", "3 meses de mantenimiento", "QR Carta digital interactiva", "Sistema de delivery"]
-)
-
-restaurant_package.save!
-p restaurant_package
-
 web_package = Package.new(
     name:"Emprendimientos",
     description: "a",
-    price: 390,
+    price: 190,
     currency: "€",
     items:["Diseño web responsive", "3 meses de mantenimiento"]
 )
 
 web_package.save!
 p web_package
+
+restaurant_package = Package.new(
+    name:"Restaurant",
+    description: "a",
+    price: 290,
+    currency: "€",
+    items:["Diseño web responsive", "3 meses de mantenimiento", "QR Carta digital interactiva", "Sistema de delivery"]
+)
+
+restaurant_package.save!
+p restaurant_package
 
 online_store_package = Package.new(
     name:"Tienda online",
