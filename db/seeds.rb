@@ -18,9 +18,10 @@ p "Creating packages..."
 web_package = Package.new(
     name:"Emprendimientos",
     description: "Ideal para la presencia web de tu emprendimiento",
-    price: 190,
+    price: 29,
     currency: "€",
-    items:["Diseño web responsive", "Panel de admin", "3 meses de mantenimiento"]
+    time_unit: "mes",
+    items:["Diseño web responsive", "Panel de admin", "Mantenimiento", "Hosting"]
 )
 
 web_package.save!
@@ -29,9 +30,10 @@ p web_package
 restaurant_package = Package.new(
     name:"Restaurant",
     description: "La mejor opción para la presencia web de tu restaurante",
-    price: 290,
+    price: 34,
     currency: "€",
-    items:["Diseño web responsive", "Panel de admin", "3 meses de mantenimiento", "QR Carta digital interactiva", "Sistema de delivery"]
+    time_unit: "mes",
+    items:["Diseño web responsive", "Panel de admin", "QR Carta digital interactiva", "Sistema de delivery", "Mantenimiento", "Hosting"]
 )
 
 restaurant_package.save!
@@ -40,9 +42,10 @@ p restaurant_package
 online_store_package = Package.new(
     name:"Tienda online",
     description: "Utiliza una plataforma de e-commerce de última generación",
-    price: 990,
+    price: 890,
     currency: "€",
-    items:["Diseño web responsive", "Panel de admin", "3 meses de mantenimiento", "Pagos seguros", "Búsqueda optimizada"]
+    time_unit: "final",
+    items:["Diseño web responsive", "Panel de admin", "Pagos seguros", "Búsqueda optimizada","Mantenimiento", "Hosting"]
 )
 
 online_store_package.save!
