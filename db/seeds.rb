@@ -39,17 +39,17 @@ restaurant_package = Package.new(
 restaurant_package.save!
 p restaurant_package
 
-online_store_package = Package.new(
-    name:"Restaurantes a medida",
-    description: "Restaurantes + seguimiento para la mejora contínua de tu sitio web.",
+custom_package = Package.new(
+    name:"Diseño a medida",
+    description: "Diseño personalizado y seguimiento para la mejora de tu sitio web.",
     price: 45,
     currency: "€",
     time_unit: "mes",
-    items:["Diseño web personalizado", "Panel de admin", "QR Carta digital interactiva", "Sistema de delivery", "Mantenimiento y hosting", "Seguimiento mensual"]
+    items:["Diseño web personalizado", "Funcionalidades a elección", "Panel de admin", "Mantenimiento y hosting", "Seguimiento mensual"]
 )
 
-online_store_package.save!
-p online_store_package
+custom_package.save!
+p custom_package
 
 p"Packages created..."
 
