@@ -12,3 +12,8 @@
 @import "pages/index";
 @import "pages/home";
 @import "pages/contact";
+
+// TailwindCSS imports
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";

@@ -45,7 +45,6 @@ class ContactFormsController < ApplicationController
 
         else
             redirect_to contacto_path, notice: "Fallo al autorizar reCAPTCHA. Por favor intente nuevamente."
-           
         end
     end
 
