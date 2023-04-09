@@ -21,7 +21,7 @@ web_package = Package.new(
     price: 290,
     currency: "€",
     time_unit: "",
-    items:["Diseño web responsive", "Panel de admin", "Mantenimiento y hosting", "Formulario de contacto"]
+    items:["Diseño web responsive", "Panel de admin", "Formulario de contacto", "3 meses de mantenimiento"]
 )
 
 web_package.save!
@@ -33,7 +33,7 @@ restaurant_package = Package.new(
     price: 390,
     currency: "€",
     time_unit: "",
-    items:["Diseño web responsive", "Panel de admin", "QR Carta digital interactiva", "Sistema de delivery", "Mantenimiento y hosting"]
+    items:["Diseño web responsive", "Panel de admin", "QR Carta digital interactiva", "Sistema de delivery", "3 meses de mantenimiento"]
 )
 
 restaurant_package.save!
@@ -45,7 +45,7 @@ custom_package = Package.new(
     price: 550,
     currency: "€",
     time_unit: "",
-    items:["Diseño web personalizado", "Funcionalidades a elección", "Panel de admin", "Mantenimiento y hosting", "Seguimiento mensual"]
+    items:["Diseño web personalizado", "Funcionalidades a elección", "Panel de admin", "3 meses de mantenimiento"]
 )
 
 custom_package.save!
