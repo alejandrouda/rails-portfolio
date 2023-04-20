@@ -33,7 +33,7 @@ restaurant_package = Package.new(
     price: 390,
     currency: "€",
     time_unit: "",
-    items:["Diseño web responsive", "Panel de admin", "QR Carta digital interactiva", "Sistema de delivery", "3 meses de mantenimiento"]
+    items:["Diseño web responsive", "Panel de admin", "QR Carta digital interactiva", "Sistema de delivery"]
 )
 
 restaurant_package.save!
