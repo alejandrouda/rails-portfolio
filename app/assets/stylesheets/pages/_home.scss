@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 // General site config
 html,
 body,
 .overflow-wrap {
   max-width: 100%;
-  background: $white;
+  background-color: $white;
   // overflow-x: hidden;
   // position: absolute;
 }
@@ -13,768 +15,117 @@ body,
   margin: 0 auto;
 }
 
-// Landing section
-
-.packages-landing-wrap {
-  margin-bottom: 100px;
-}
-
-.landing-section {
-  padding-top: 165px;
+.hero-frames {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  // height: calc(80vh - 85px)
+  align-items: center;
 }
 
-.social-media-icons-landing {
-  margin: auto 0;
+.mobile-frame {
+  height: fit-content !important;
+  position: relative;
+  left: 40px;
 }
 
-.social-media-icons {
-  padding: 0;
-  display: grid;
-  grid-template-rows: 70px 70px 70px;
-}
-
-.social-media-icon {
-  border: none;
-  background: none;
-  display: block;
-  text-align: left;
-  fill: $primary-color;
-  color: $primary-color;
-  width: 30px;
-}
-
-.landing-primary-section {
-  max-width: 500px;
-  background-image: url("https://res.cloudinary.com/dfyhqslry/image/upload/v1673690983/code%20web/Code_image_oc1ata.svg");
-  background-size: 500px;
-  width: 500px;
-  background-position-y: 65px;
-  background-repeat: no-repeat;
-}
-
-.button-link {
-  height: fit-content;
-}
-
-.landing-code-image {
-  z-index: 1;
-  left: -40px;
-  top: -10px;
-  width: 600px;
-  position: absolute;
-}
-
-.landing-secondary-header {
-  max-width: 500px;
-  padding: 30px 0 40px 0;
-}
-
-.landing-secondary-section {
-  padding-top: 50px;
-  max-width: 600px;
-
-  img {
-    min-width: 100%;
-    max-width: 100%;
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
   }
 }
 
-// Fonts
-
-h1 {
-  font-size: 52px;
-  font-family: $headers-font;
-  font-weight: 800;
-  color: $primary-text;
-}
-
-h2 {
-  font-size: 34px;
-  font-family: $headers-font;
-  font-weight: 800;
-  color: $primary-text;
-}
-
-h3 {
-  font-size: 30px;
-  font-family: $headers-font;
-  font-weight: 600;
-  color: $primary-text;
-}
-
-h4 {
-  font-size: 26px;
-  font-family: $headers-font;
-  font-weight: 600;
-  color: $primary-text;
-}
-
-h5 {
-  font-size: 16px;
-  font-family: $headers-font;
-  font-weight: 800;
-  color: $primary-text;
-}
-
-h6 {
-  font-size: 20px;
-  font-family: $headers-font;
-  font-weight: 500;
-  color: darkgray;
-}
-
-.text-align-center {
-  text-align: center;
-}
-
-p {
-  font-family: $body-font;
-  font-size: 16px;
-  color: $primary-text;
-}
-
-// Services section
-
-.services-landing-wrap {
-  margin-top: 100px;
-}
-
-.services-index-wrap {
-  padding-top: 30px;
-}
-
-.services-section {
-  padding: 100px 0;
-  background-color: #efeff8;
-  background-size: 100%;
-}
-
-.services-section {
-  select {
-    display: none;
-  }
-}
-
-.services-list {
-  padding-left: 0;
-  display: flex;
-  justify-content: space-between;
-  width: 520px;
-  margin: 80px auto 40px auto;
-
-  li {
-    cursor: pointer;
-  }
-}
-
-.services-render {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: 80px auto 0 auto;
-}
-
-.services-description {
-  width: 42%;
-
-  a {
-    text-decoration: none;
-  }
-}
-
-.services-description-header {
-  padding: 20px 0px;
-}
-
-.services-image {
-  width: 42%;
-
-  img {
-    width: 100%;
-  }
-}
-
-.services-tab--selected {
-  color: $primary-color;
-  text-decoration: underline $primary-color;
-  text-underline-offset: 12px;
-}
-
-.services-description_indicator {
-  color: $primary-color;
-}
-
-.services-description_link {
-  color: $primary-color;
-  padding-top: 20px;
-}
-
-// Packages section
-
-.packages-section {
-  margin: 0 auto;
-  max-width: 1275px;
-  padding: 80px 0;
-}
-
-.packages-header {
-  padding-bottom: 80px;
-}
-
-.packages {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.package {
-  transition: 0.2s;
-}
-
-.package:hover {
-  box-shadow: 0px 12px 24px $box-shadow;
-  transition: 0.2s;
-}
-
-.package-headers {
-  margin: 0 auto;
-  height: 140px;
-  background-color: $light-gray;
-  border-bottom: solid 1px gray;
-  padding: 30px;
-  text-align: center;
-
-  h5 {
-    margin-bottom: 0;
-  }
-}
-
-.package-description {
-  padding: 30px 20px;
-  height: 280px;
-}
-
-.included-items {
-  padding: 10px 0;
-  margin-block-start: 0;
-}
-
-.included-item {
-  display: flex;
-
-  i {
-    padding-top: 5px;
-    padding-right: 10px;
-  }
-}
-
-@media only screen and (max-width: 1480px) {
-  .main-site-container {
-    max-width: 1300px;
+@layer components {
+  input[type="checkbox"]:checked~label span svg {
+    display: inline-flex; // Replace @apply with standard CSS
   }
 
-  .landing-primary-section {
-    max-width: 450px;
-    background-size: 450px;
+  .sticky {
+    position: fixed; // Replace !fixed with standard CSS
+    z-index: 9999; // Replace !z-[9999] with standard CSS
+    transition: all 0.3s; // Replace !transition with standard CSS
+    background-color: rgba(255, 255, 255, 0.8); // Replace !bg-white with standard CSS
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
   }
 
-  h1 {
-    font-size: 48px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
+  .sticky .header-logo {
+    padding: 1rem 0.5rem; // Replace @apply py-4 lg:py-2; with standard CSS
   }
 
-  h2 {
-    font-size: 32px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
+  .sticky .menu-scroll.active {
+    color: green; // Replace text-primary with your actual color
   }
 
-  h4 {
-    font-size: 24px;
-    font-family: $headers-font;
-    font-weight: 600;
-    color: $primary-text;
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-  .main-site-container {
-    max-width: 1250px;
+  .navbarTogglerActive>span:nth-child(1) {
+    transform: rotate(45deg) translateY(7px); // Replace @apply transform rotate-45 top-[7px]; with standard CSS
   }
 
-  .landing-secondary-section {
-    padding-top: 50px;
-    max-width: 600px;
+  .navbarTogglerActive>span:nth-child(2) {
+    opacity: 0; // Replace @apply opacity-0; with standard CSS
   }
 
-  .landing-primary-section {
-    max-width: 425px;
-    background-size: 425px;
+  .navbarTogglerActive>span:nth-child(3) {
+    transform: rotate(-135deg) translateY(-8px); // Replace @apply top-[-8px] rotate-[135deg]; with standard CSS
   }
 
-  h1 {
-    font-size: 44px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
-  }
+  .input-field {
+    width: 100%; // Replace @apply w-full with standard CSS
+    border-radius: 0.125rem; // Replace rounded-sm with standard CSS
+    padding: 1rem 2rem; // Replace py-4 px-8 with standard CSS
+    background-color: #f8f8f9; // Replace bg-[#f8f8f9] with your actual color
+    border-bottom: 2px solid transparent; // Replace border-b-2 border-transparent with standard CSS
+    outline: none;
+    box-shadow: none; // Replace focus-visible:shadow-none with standard CSS
+    transition: all 0.3s; // Replace transition with standard CSS
+    font-size: 1rem; // Replace text-base with standard CSS
+    font-weight: 500; // Replace font-medium with standard CSS
+    color: green; // Replace text-body-color with your actual color
 
-  h2 {
-    font-size: 30px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
-  }
-
-  h4 {
-    font-size: 22px;
-    font-family: $headers-font;
-    font-weight: 600;
-    color: $primary-text;
-  }
-
-  .packages-section {
-    max-width: 100%;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  .main-site-container {
-    max-width: 1220px;
-  }
-
-  .landing-primary-section {
-    max-width: 400px;
-    background-size: 400px;
-  }
-
-  .landing-secondary-section {
-    padding-top: 50px;
-    max-width: 550px;
-  }
-
-  h1 {
-    font-size: 42px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
-  }
-
-  h2 {
-    font-size: 28px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
-  }
-
-  h4 {
-    font-size: 20px;
-    font-family: $headers-font;
-    font-weight: 600;
-    color: $primary-text;
-  }
-
-  .package {
-    width: 290px;
-  }
-}
-
-@media only screen and (max-width: 1270px) {
-  .main-site-container {
-    max-width: 1160px;
-  }
-
-  .landing-secondary-section {
-    padding-top: 50px;
-    max-width: 500px;
-  }
-
-  .package {
-    width: 275px;
-  }
-
-  .package-description {
-    height: 300px;
-  }
-
-  .included-items {
-    margin-bottom: 0;
-    padding: 5px 0;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .main-site-container {
-    max-width: 1100px;
-  }
-
-  .package {
-    width: 275px;
-  }
-
-  .package-description {
-    height: 300px;
-  }
-
-  .included-items {
-    margin-bottom: 0;
-    padding: 5px 0;
-  }
-
-  .packages-section {
-    width: 710px;
-  }
-
-  .packages {
-    flex-wrap: wrap;
-  }
-
-  .package {
-    width: 340px;
-    margin-bottom: 30px;
-  }
-
-  .package-headers {
-    height: 120px;
-  }
-
-  .package-description {
-    height: 260px;
-  }
-}
-
-@media only screen and (max-width: 1140px) {
-  .main-site-container {
-    max-width: 1020px;
-  }
-
-  .landing-primary-section {
-    max-width: 380px;
-    background-size: 380px;
-  }
-
-  h1 {
-    font-size: 40px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
-  }
-
-  h2 {
-    font-size: 26px;
-    font-family: $headers-font;
-    font-weight: 800;
-    color: $primary-text;
-  }
-
-  h4 {
-    font-size: 20px;
-    font-family: $headers-font;
-    font-weight: 600;
-    color: $primary-text;
-  }
-}
-
-@media only screen and (max-width: 1060px) {
-  .main-site-container {
-    max-width: 980px;
-  }
-
-  .landing-secondary-section {
-    padding-top: 50px;
-    max-width: 475px;
-  }
-
-  .services-list {
-    width: 480px;
-  }
-}
-
-@media only screen and (max-width: 1030px) {
-  .main-site-container {
-    max-width: 960px;
-  }
-}
-
-@media only screen and (max-width: 1010px) {
-  .main-site-container {
-    max-width: 920px;
-  }
-
-  .landing-primary-section {
-    max-width: 350px;
-    background-size: 350px;
-  }
-
-  .landing-secondary-section {
-    width: 450px;
-
-    img {
-      min-width: 100%;
-      max-width: 100%;
+    &::placeholder {
+      color: green; // Replace placeholder-body-color with your actual color
     }
   }
 
-  h1 {
-    font-size: 38px;
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
-  h4 {
-    font-size: 20px;
+  .portfolio-buttons button.active {
+    background-color: green; // Replace bg-primary with your actual color
+    color: #fff; // Replace text-white with your actual color
   }
 }
 
-@media only screen and (max-width: 960px) {
-  .main-site-container {
-    max-width: none;
-    padding: 0 40px;
-  }
-
-  .landing-secondary-section {
-    width: 400px;
-  }
-
-  .social-media-icons-landing {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .landing-section {
-    flex-direction: column;
-  }
-
-  .landing-primary-section {
-    margin: 0 auto;
-  }
-
-  .landing-secondary-section {
-    margin: 0 auto;
-  }
-
-  .services-section-wrap {
+@media (min-width: 1000px) {
+  #hero-content-wrapper {
     margin-top: 60px;
-    padding-top: 60px;
   }
 }
 
-@media only screen and (max-width: 820px) {
-  .services-image {
-    width: 45%;
-  }
-
-  .services-description {
-    width: 43%;
-  }
-
-  .packages-section {
-    width: 100%;
-  }
-
-  .package {
-    width: 48%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .services-list {
+@media (max-width: 1000px) {
+  .hero-frames {
     display: none;
   }
-
-  .services-section {
-    select {
-      display: block;
-      margin: 40px auto;
-      padding: 10px;
-      width: 80%;
-      border-color: lightgray;
-      background-color: white;
-    }
-  }
-
-  .services-render {
-    flex-direction: column;
-    margin: 0 auto;
-  }
-
-  .services-image {
-    width: 80%;
-    margin: 20px auto;
-  }
-
-  .services-description {
-    width: 80%;
-    margin: 20px auto;
-  }
 }
 
-@media only screen and (max-width: 700px) {
-  .package {
-    margin-bottom: 20px;
-  }
-
-  .package-headers {
-    height: 140px;
-  }
-
-  .package-description {
-    height: 300px;
-  }
+.service-card:hover {
+  background-color: #4A6CF7 !important;
 }
 
-@media only screen and (max-width: 620px) {
-  .package {
-    width: 60%;
-  }
-
-  .packages {
-    justify-content: space-around;
-  }
-
-  .package-description {
-    height: 260px;
-  }
+.service-icon-circle {
+  background-color: #4A6CF7 !important;
 }
 
-@media only screen and (max-width: 600px) {
-  .landing-section {
-    padding-top: 125px;
-  }
-
-  .landing-secondary-section {
-    display: none;
-  }
-
-  .services-section {
-    select {
-      width: 100%;
-    }
-  }
-
-  .services-image {
-    width: 100%;
-  }
-
-  .services-description {
-    width: 100%;
-  }
-
-  .package {
-    width: 65%;
-  }
+.service-card:hover .service-icon-circle {
+  background-color: white !important;
 }
 
-@media only screen and (max-width: 560px) {
-  .main-site-container {
-    padding: 0 20px;
-  }
-
-  .package {
-    width: 75%;
-  }
-
-  .package-headers {
-    height: 120px;
-  }
+.service-card:hover h3 {
+  color: white !important;
 }
 
-@media only screen and (max-width: 524px) {
-  .main-site-container {
-    padding: 0 20px;
-  }
-
-  .package {
-    width: 80%;
-  }
+.service-card:hover .fill-current {
+  fill: $primary-color !important;
 }
 
-@media only screen and (max-width: 448px) {
-  .landing-primary-section {
-    max-width: 340px;
-    background-size: 340px;
-  }
-
-  .landing-secondary-section {
-    width: 340px;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  .packages-section {
-    padding-top: 40px;
-  }
-
-  .packages-header {
-    padding-bottom: 40px;
-  }
-
-  .package {
-    width: 100%;
-  }
+.service-card:hover .fill-current {
+  fill: $primary-color !important;
 }
 
-@media only screen and (max-width: 380px) {
-  .landing-primary-section {
-    max-width: 320px;
-    background-size: 320px;
-  }
-
-  .landing-secondary-section {
-    width: 320px;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .landing-primary-section {
-    max-width: 300px;
-    background-size: 300px;
-  }
-
-  .landing-secondary-section {
-    width: 300px;
-  }
-
-  h1 {
-    font-size: 36px;
-  }
-}
-
-@media only screen and (max-width: 340px) {
-  .landing-primary-section {
-    max-width: 280px;
-    background-size: 280px;
-  }
-
-  .landing-secondary-section {
-    width: 280px;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
+.clients-cta {
+  background-color: #4A6CF7 !important;
 }

@@ -1,4 +1,5 @@
-       
+
+<!-- ====== Navbar Section Start -->
 
 <nav>
   <div class="nav-content">
@@ -13,16 +14,16 @@
           <%= link_to "Inicio", root_path, class:"nav-link nav-font" %>
         </li>
         <li data-turbo="false" <%= 'class=navlink-active' if current_page?(services_path) %>>
-          <%= link_to "Servicios", services_path, class:"nav-link nav-font" %>
+          <a href="#" class="nav-link nav-font">Servicios</a>
+          <%# <%= link_to "Servicios", services_path, class:"nav-link nav-font" %>
         </li>
         <li  <%= 'class=navlink-active' if current_page?(packages_path) %>>
-          <%= link_to "Precios", packages_path, class:"nav-link nav-font" %>
+          <a href="#" class="nav-link nav-font">Portfolio</a>
+          <%# <%= link_to "Precios", packages_path, class:"nav-link nav-font" %> 
         </li>
-        <%# <li>
-          <a href="#contact" class="nav-link nav-font">Blog</a>
-        </li> %>
         <li data-turbo="false"  <%= 'class=navlink-active' if current_page?(contacto_path) %>>
-          <%= link_to "Contacto", contacto_path, class:"nav-link nav-font" %>
+          <a href="#" class="nav-link nav-font">Blog</a> 
+          <%# <%= link_to "Contacto", contacto_path, class:"nav-link nav-font" %>
         </li>
         <li>
           <a href="contacto" class="button-link" data-turbo="false" >
@@ -39,5 +40,4 @@
   </div>
 </nav>
    
-       
-     
+  <!-- ====== Navbar Section End -->

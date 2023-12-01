@@ -28,7 +28,7 @@
       <%= yield %>
 
       <%= turbo_frame_tag :cookie_consent, src: cookies_path if session[:cookie_consent].nil? %>
-      <%= render "shared/components/footer" %>
+      <%= render "shared/sections/footer-section" %>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>

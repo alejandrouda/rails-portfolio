@@ -2,8 +2,9 @@
 import "@hotwired/turbo-rails";
 import "./controllers";
 import "./components/navbar.js";
-import "./components/services-section-image-switch";
-import "./components/services-list-handler";
+import "./components/portfolio-filters.js";
+// import "./components/services-section-image-switch";
+// import "./components/services-list-handler";
 
 import "bootstrap";
 
