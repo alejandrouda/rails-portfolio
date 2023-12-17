@@ -34,23 +34,7 @@
               <%= image_tag('https://res.cloudinary.com/dqstmox0s/image/upload/v1701367959/Screenshot_2023-11-30_at_18.53_1_yta5p7.png', class:"lg:ml-auto max-w-[540px]") %>
             </div>
           </div>
-          <div class="clients pt-16">
-            <p class="font-normal text-xs flex items-center text-body-color mb-2">
-              I'm specialized in
-              <span class="w-8 h-[1px] bg-body-color inline-block ml-2"></span>
-            </p>
-            <div class="flex items-center">
-                <div class="w-full py-3 mr-6">
-                <%= image_tag('brands/Algolia-logo-blue.svg', style:"height:45px;") %>
-              </div> 
-              <div class="w-full py-3 mr-6">
-                <%= image_tag('brands/shopify_logo_whitebg.svg', style:"height:45px; padding-bottom:3px") %>
-              </div>
-              <div class="w-full py-3 mr-6">
-                <%= image_tag('brands/Ruby_On_Rails_Logo.svg', style:"height:50px; padding-bottom:8px;") %>
-              </div>
-            </div>
-          </div>
+          <%= render "shared/sections/specialized-in" %>
         </div>
       </div>
     </section>

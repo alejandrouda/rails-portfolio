@@ -81,3 +81,9 @@ end
 
 
 gem "tailwindcss-rails", "~> 2.0"
+
+gem "dockerfile-rails", ">= 1.5", :group => :development
+
+gem "sentry-ruby", "~> 5.14"
+
+gem "sentry-rails", "~> 5.14"
